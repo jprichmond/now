@@ -127,6 +127,6 @@ out = JSON.stringify(out)
 // console.log(out)
 
 const err = new Error('failed to write to file')
-fs.writeFile('seeking/data.json', out, (err) => {
+fs.writeFile('data.json', out, (err) => {
   err? console.log(err) : console.log("file written successfully")
 });
