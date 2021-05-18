@@ -4,7 +4,7 @@ from datetime import date as d
 
 resume = open('../data.json')
 data = json.load(resume,
-  object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
+                 object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 info = data[0]; ed = data[1]; work = data[2]; craft = data[3]
 date = d.today().strftime('%Y.%m.%d')
 

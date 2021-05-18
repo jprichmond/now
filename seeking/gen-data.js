@@ -41,7 +41,7 @@ const work = {
     role:`Lead Instructor`,
     start:2018,
     end:2020,
-    text: [`Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.`,`Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Javascript, Unity, and Python.`,`Attended to the struggling to help them understand that coding is about embracing failure and not giving up.`,`Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach.`]
+    text: [`Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.`,`Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.`,`Attended to the struggling to help them understand that coding is about embracing failure and not giving up.`,`Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach.`]
   },
   ace: {
     name:`Academic Center for Excellence`,
@@ -63,9 +63,9 @@ skills: {
       `Serverless`,
       `Angular`,
       `Django`,
-      `MySQL`,
       `NoSQL`,
       `React`,
+      `Redux`,
       `Typescript`,
     ],
     employing: [
@@ -76,7 +76,6 @@ skills: {
     ],
     mastering: [
       `p5.js`,
-      `Python`,
       `Javascript`,
       `HTML`,
       `CSS`,
@@ -85,7 +84,6 @@ skills: {
   },
   data: {
     acquiring: [
-      `NoSQL`,
       `MySQL`,
       `Pandas`,
       `Numpy`,
@@ -102,7 +100,6 @@ skills: {
     ],
     mastering: [
       `Python`,
-      `Javascript`,
     ],
   },
   dev: [
@@ -127,6 +124,6 @@ out = JSON.stringify(out)
 // console.log(out)
 
 const err = new Error('failed to write to file')
-fs.writeFile('data.json', out, (err) => {
+fs.writeFile('seeking/data.json', out, (err) => {
   err? console.log(err) : console.log("file written successfully")
 });

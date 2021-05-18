@@ -1,20 +1,44 @@
-import json
-from collections import namedtuple
-data = json.load(resume,object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
+import json; from collections import namedtuple; from datetime import date as d
 
+resume = open('../data.json')
+dat = json.load(resume,object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
+info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; web = craft.skills.web; data = craft.skills.data
+date = d.today().strftime('%Y.%m.%d'); 
+coll = 31; gut = 5; colr = 75; back = '~'; tab = 2; 
+ace = work.ace
 ##############################################################################################################
-print(f'''SKILLS:{(cola-len('SKILLS:'))*" "}{gut*' '}WORK EXPERIENCE:{(colb-len('WORK EXPERIENCE:'))*" "}
-{cola*"#"}{gut*' '}{colb*"#"}
-{(cola-len()*" "+}{gut*' '}* WORKS!
-''')
+text = f'''{info.name}\n{info.email}\n{info.site}\n{info.phone}
+'''; cap = 'WEB DEV SKILLS'; wrk = 'WORK EXPERIENCE'
+text += f'''{f'{cap}'+(coll-len(f'{cap}'))*' '}{gut*' '}{(colr-len(f'{wrk}'))*' '}{wrk}
+*{(coll-2)*back}*{(gut)*' '}*{(colr-2)*'~'}*
+'''; sbcs = work.sbcs; role = sbcs.role.upper(); yrs = f'{sbcs.start} ~ {sbcs.end}'; w = web.acquiring
+text += f'''ACQUIRING:{(coll-len('ACQUIRING:'))*' '}{gut*' '}{role}{(colr-len(role)-len(yrs))*' '}{yrs}
+{tab*' '}{w[0]+(coll-len(f'{w[0]}')-tab)*' '}{gut*' '}  {sbcs.name.upper()}
+{tab*' '}{w[1]+(coll-len(f'{w[1]}')-tab)*' '}{gut*' '}  * {sbcs.text[0][:72]}
+{tab*' '}{w[2]+(coll-len(f'{w[2]}')-tab)*' '}{gut*' '}    {sbcs.text[0][72:142]}
+{tab*' '}{w[3]+(coll-len(f'{w[3]}')-tab)*' '}{gut*' '}    {sbcs.text[0][142:]}
+{tab*' '}{w[4]+(coll-len(f'{w[4]}')-tab)*' '}{gut*' '}  * {sbcs.text[1][:72]}
+{tab*' '}{w[5]+(coll-len(f'{w[5]}')-tab)*' '}{gut*' '}    {sbcs.text[1][72:143]}
+{tab*' '}{w[6]+(coll-len(f'{w[6]}')-tab)*' '}{gut*' '}    {sbcs.text[1][143:]}
+{tab*' '}{w[7]+(coll-len(f'{w[7]}')-tab)*' '}{gut*' '}  * {sbcs.text[2][:72]}
+{tab*' '}{w[8]+(coll-len(f'{w[8]}')-tab)*' '}{gut*' '}    {sbcs.text[2][72:142]}
+{tab*' '}{w[9]+(coll-len(f'{w[9]}')-tab)*' '}{gut*' '}  * {sbcs.text[3][:68]}
+'''; w = web.employing
+text += f'''EMPLOYING:{(coll-len('EMPLOYING:'))*' '}{gut*' '}    {sbcs.text[3][68:134]}
+{tab*' '}{w[0]+(coll-len(f'{w[0]}')-tab)*' '}{gut*' '}    {sbcs.text[3][135:]}
+{tab*' '}{w[1]+(coll-len(f'{w[1]}')-tab)*' '}
+{tab*' '}{w[2]+(coll-len(f'{w[2]}')-tab)*' '}{gut*' '}*{(colr-2)*'~'}*
+'''; role = ace.role.upper(); yrs = f'{ace.start} ~ {ace.end}'
+text += f'''{tab*' '}{w[3]+(coll-len(f'{w[3]}')-tab)*' '}{gut*' '}{role}{(colr-len(role)-len(yrs))*' '}{yrs}
+'''; w = web.mastering
+text += f'''MASTERING:{(coll-len('MASTERING:'))*' '}{gut*' '}  {ace.name.upper()}
+{tab*' '}{w[0]+(coll-len(f'{w[0]}')-tab)*' '}{gut*' '}  * {ace.text[0][:68]}
+{tab*' '}{w[1]+(coll-len(f'{w[1]}')-tab)*' '}{gut*' '}    {ace.text[0][69:138]}
+{tab*' '}{w[2]+(coll-len(f'{w[2]}')-tab)*' '}{gut*' '}    {ace.text[0][139:]}
+{tab*' '}{w[3]+(coll-len(f'{w[3]}')-tab)*' '}{gut*' '}
+
+'''
+
+print(text)
 
 
-
-
-
-
-
-
-"""exp = {'wb':{'ac':['Full-stack Web Development','Microservices','REST','Serverless','Angular','Django','MongoDB','MySQL','React','Redux','Jekyll','Typescript','Test-driven Development','Unit Testing'],'em':['Front-end Web Design','Node.js','Docker','Functional Programming','C#','UML'],'ms':['Python','Javascript','HTML','CSS','Git','Object-oriented Programming','Documentation']},'dt':{'ac':['MySQL','MongoDB','Microservices','Pandas','Spark','Hadoop','Numpy','Functional Programming','Machine Learning','AI','Neural Networks'],'em':['SQL','R','C#','Functional Programming','UML','Java'],'ms':['Python','Javascript','Git','Object-oriented Programming','Documentation']},'dv':['C','C++','WebAssembly','GoF Design Patterns','Interpersonal Communication','SuperCollider','Music Production','Songwriting']}  
-'role':'Lead Instructor','work':'South Bend Code School','date':'18.09 ~ 20.05','1':'Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.','2':'Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Javascript, Unity, and Python.','3':'Attended to the struggling to help them understand that coding is about embracing failure and not giving up.','4':'Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach.','role':'Learning Facilitator','work':'Academic Center for Excellence','date':'16.09 ~ 19.05','1':'Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed.','2':'Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer.','3':'Convinced the department to retain early Friday hours for those getting a head start on the weekend.','4':'Collaborated with professors to help compress the complex world of code into the tangible everyday for entry-level students.','degree':'Master of Science','major':'Computer Science','school':'Indiana University South Bend','1':'Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run puck-like robot with programmed with enough AI to navigate a maze.','1':'Implemented a compiler for an original musical language written in 7-bit ASCII, designed to be readable, typeable, singable, and shareable, with chromaticism, music theory, and rhythm built in to complement the diatonicity of traditional notation.','2':'Launching a domain-specific alpha at the end of the summer with sights on publication and a Turing complete beta by the end of 2021.',
-"""
