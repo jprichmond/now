@@ -12,6 +12,7 @@ const info = {
   text: [`M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software engineering capabilities ${position}.`,`Offers five years experience developing programs in an academic setting in addition to teaching students of all ages and aptitudes the art of programming.`,`Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.`,`Dealt with clients and engineered solutions for small businesses in prior career.`]
 }
 const ed = {
+  name: `Academic Experience`,
   grad: {
     school:`Indiana University South Bend`,
     gpa:3.7,
@@ -37,6 +38,7 @@ const ed = {
   }
 }
 const work = {
+  name: `Work Experience`,
   sbcs: {
     name:`South Bend Code school`,
     role:`Lead Instructor`,
@@ -57,6 +59,7 @@ const work = {
 const craft = {
 skills: {
   web: {
+    name: `Web Development Skills`,
     acquiring: [
       `Full-stack Development`,
       `Microservices`,
@@ -81,6 +84,7 @@ skills: {
     ],
   },
   data: {
+    name: `Data Engineering Skills`,
     acquiring: [
       `MySQL`,
       `Pandas`,
@@ -97,17 +101,20 @@ skills: {
       `Python`,
     ],
   },
-  dev: [
-    `Object-oriented Programming`,
-    `Procedural Programming`,
-    `Functional Programming (FP)`,
-    `Unit Testing`,
-    `Test-driven Development`,
-    `Gang of Four Design Patterns`,
-    `UI/UX Design`,
-    `Git`,
-    `C/C++`
-  ]
+  dev: {
+    name: `Additional Know-how`,
+    employing: [
+      `Object-oriented Programming`,
+      `Procedural Programming`,
+      `Functional Programming (FP)`,
+      `Unit Testing`,
+      `Test-driven Development`,
+      `Gang of Four Design Patterns`,
+      `UI/UX Design`,
+      `Git`,
+      `C/C++`
+    ]
+  }
 }}
 
 out = [info,ed,work,craft]
