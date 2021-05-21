@@ -28,6 +28,7 @@ const ed = {
   undergrad: {
     degree:`Bachelor of Arts`,
     school:`Indiana University Bloomington`,
+    gpa: 3.1,
     major: {
       anth:`Anthropology`,
       econ:`Economics`,
@@ -85,16 +86,14 @@ skills: {
       `Pandas`,
       `PySpark`,
       `Hadoop`,
-      `Entity Framework`,
-      `LINQ`,
       `R`,
     ],
     employing: [
       `Machine Learning`,
-      `AI`,
       `Neural Networks`,
+      `AI`,
       `SQL`,
-      `C#`,
+      `Java`,
       `Python`,
     ],
   },
@@ -107,6 +106,7 @@ skills: {
     `Gang of Four Design Patterns`,
     `UI/UX Design`,
     `Git`,
+    `C/C++`
   ]
 }}
 

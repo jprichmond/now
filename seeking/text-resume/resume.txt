@@ -3,8 +3,8 @@
      /////   ///     ////    ////   ///   //    //////   //  /////  //   // ///    ///   ////   ///   // /////
        //  // //  //      //    // ////  //    //   //  // //   // //   // ////  //// //    // ////  // //  //
       // //   //   ///   //    // // /////    //////   // //      /////// // //// // //    // // ///// //   //
-//   // ///////      // //    // //   ///    //   //  // //   // //   // //  //  // //    // //   // //   //
-/////  //   // //////    ////   //    //    //    // //  /////  //   // //      //   ////   //   // //////
+//   // ///////      // //    // //   ///    //   //  // //   // //   // //  //  // //    // //   /// //   //
+/////  //   // //////    ////   //    //    //    // //  /////  //   // //      //   ////   //    // //////
 
 
                               EMAIL: me@jason.richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is
@@ -19,9 +19,9 @@
         * Dealt with clients and engineered solutions for small businesses in prior career.
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 WEB DEVELOPMENT SKILLS                                                                          WORK EXPERIENCE
-*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     *-------------------------------------------------------------------------*
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 ACQUIRING:                          LEAD INSTRUCTOR                                                 2018 ~ 2020
-  Full-stack Development              SOUTH BEND CODE SCHOOL
+  Full-stack Development              South Bend Code School
   Microservices                       * Crafted interactive learning path spanning eleven lessons of around 25k
   REST                                  words in p5.js, giving students an introduction to class-based object-
   Serverless                            oriented programming.
@@ -30,35 +30,40 @@ ACQUIRING:                          LEAD INSTRUCTOR                             
   NoSQL                                 Javascript, and Python.
   React                               * Attended to the struggling to help them understand that coding is about
   Redux                                 embracing failure and not giving up.
-  Typescript                          * Entrusted with running the Elkhart branch and being liazon to local 
-EMPLOYING:                          
-  Front-end Web Design              *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Node.js                           LEARNING FACILITATOR                                            2016 ~ 2019
-  Docker                              ACADEMIC CENTER FOR EXCELLENCE
-  p5.js                               * Equipped dozens of graduates and undergraduates of all levels having
-  Javascript                            trouble grokking the theory and practice of Computer Science with the
-  C#                                    knowledge and skills to succeed.
-  HTML                                * Debugged hundreds of student-written programs, usually on a tight
-  CSS                                   deadline before submission without reference to a working answer.
-  Markdown                            * Convinced the department to retain early Friday hours for those getting
-                                        a head start on the weekend.
-DATA ENGINEERING SKILLS               * Collaborated with professors to help compress the complex world of code
-*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*         into the tangible everyday for entry-level students.
-ACQUIRING:                          
-  MySQL                             *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Pandas                                                                                              EDUCATION
-  PySpark                           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Hadoop                            MASTER OF SCIENCE ~ COMPUTER SCIENCE                                   2021
-  Entity Framework                    INDIANA UNIVERSITY SOUTH BEND                                    GPA: 3.7
-  LINQ                                * Studied a wide spectrum in the discipline, from artificial intelligence
-  R                                     to algorithm analysis, networking to neural networks, graphics to
-EMPLOYING:                              games, even writing the opcodes for a simulated CPU to run a puck-like
-  Machine Learning                      robot with programmed with enough AI to navigate a maze.
-  AI                                *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Neural Networks                   DOES THIS PRINT
-  SQL                               MASTER’S PROJECT ~ Master’s Project
-  Machine Learning                                *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-EMPLOYING:                            * Studied a wide spectrum in the discipline, from artificial intelligence
-  Procedural Programming                to algorithm analysis, networking to neural networks, graphics to
-  Functional Programming (FP)           games, even writing the opcodes for a simulated CPU to run a puck-like
-  Unit Testing                          robot with programmed with enough AI to navigate a maze.
+  Typescript                          * Entrusted with running the Elkhart branch and being liazon to local
+EMPLOYING:                              schools keeping the relevant stakeholders happy and extending Code
+  Front-end Web Design                  School reach.
+  Node.js                           
+  Docker                            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  p5.js                             LEARNING FACILITATOR                                            2016 ~ 2019
+  Javascript                          Academic Center For Excellence
+  HTML                                * Equipped dozens of graduates and undergraduates of all levels having
+  CSS                                   trouble grokking the theory and practice of Computer Science with the
+  Markdown                              knowledge and skills to succeed.
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*       * Debugged hundreds of student-written programs, usually on a tight dead-
+DATA ENGINEERING SKILLS                 line before submission without reference to a working answer.
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*       * Convinced the department to retain early Friday hours for those getting
+ACQUIRING:                              a head start on the weekend.
+  MySQL                               * Collaborated with professors to help compress the complex world of code
+  Pandas                                into the tangible everyday for entry-level students.
+  PySpark                           
+  Hadoop                            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  R                                                                                                   EDUCATION
+EMPLOYING:                          *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Machine Learning                  MASTER OF SCIENCE ~ Computer Science                                   2021
+  Neural Networks                     Indiana University South Bend                                    GPA: 3.7
+  AI                                  * Studied a wide spectrum in the discipline, from artificial intelligence
+  SQL                                   to algorithm analysis, networking to neural networks, graphics to
+  Java                                  games, even writing the opcodes for a simulated CPU to run a puck-like
+  Python                                robot with programmed with enough AI to navigate a maze.
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     
+ADDITIONAL KNOW-HOW                 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     MASTER’S PROJECT ~ Counternote Compiler
+  Procedural Programming              * Implemented a compiler for an original musical language written in
+  Functional Programming (FP)           7-bit ASCII, designed to be readable, typeable, singable, and share-
+  Unit Testing                          able, with chromaticism, music theory, and rhythm built in to com-
+  Test-driven Development               plement the diatonicity of traditional notation.
+  Gang of Four Design Patterns      
+  UI/UX Design                      *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Git                               BACHELOR OF ARTS ~ Anthropology, Linguistics, Economics
+  C/C++                               Indiana University Bloomington
