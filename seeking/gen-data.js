@@ -18,7 +18,7 @@ const ed = {
     degree:`Master of Science`,
     year:`2021`,
     major:`Computer Science`,
-    text: [`Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run puck-like robot with programmed with enough AI to navigate a maze.`],
+    text: [`Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run a puck-like robot with programmed with enough AI to navigate a maze.`],
     project: {
       name:`Master’s Project`,
       title:`Counternote Compiler`,
@@ -72,9 +72,6 @@ skills: {
       `Front-end Web Design`,
       `Node.js`,
       `Docker`,
-      `C#`,
-    ],
-    mastering: [
       `p5.js`,
       `Javascript`,
       `HTML`,
@@ -86,7 +83,8 @@ skills: {
     acquiring: [
       `MySQL`,
       `Pandas`,
-      `Numpy`,
+      `PySpark`,
+      `Hadoop`,
       `Entity Framework`,
       `LINQ`,
       `R`,
@@ -97,8 +95,6 @@ skills: {
       `Neural Networks`,
       `SQL`,
       `C#`,
-    ],
-    mastering: [
       `Python`,
     ],
   },
@@ -110,12 +106,7 @@ skills: {
     `Test-driven Development`,
     `Gang of Four Design Patterns`,
     `UI/UX Design`,
-    `Graphic Design`,
     `Git`,
-    `UML`,
-    `Information Architecture`,
-    `Documentation`,
-    `Quality Assurance`,
   ]
 }}
 
@@ -124,6 +115,6 @@ out = JSON.stringify(out)
 // console.log(out)
 
 const err = new Error('failed to write to file')
-fs.writeFile('seeking/data.json', out, (err) => {
+fs.writeFile('../data.json', out, (err) => {
   err? console.log(err) : console.log("file written successfully")
 });

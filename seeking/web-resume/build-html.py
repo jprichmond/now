@@ -36,7 +36,7 @@ def unpack(array):
   h = h[:-2]
   return h
 
-T = True; F = False; w = F; web_dev = 'Web Dev'; data_sci = 'Data Science'
+T = True; F = False; w = F; web_dev = 'Web Development'; data_sci = 'Data Engineering'
 def wrap(n,l,t,c,v): # newline, indent level, html tag, html class, value
   s = '  '
   n = f'\n{s*l}' if n else ''
@@ -118,13 +118,11 @@ body = wrap(F,0,'body','content',
     wrap(F,2,'h2','title',f'{web_dev if w else data_sci} Skills')+
     (wrap(T,2,'ul','',
       wrap(F,3,'li','','ACQUIRING: '+unpack(craft.skills.web.acquiring))+
-      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.web.employing))+
-      wrap(T,3,'li','','MASTERING: '+unpack(craft.skills.web.mastering))
+      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.web.employing))
     ) if w else '' )+
     (wrap(T,2,'ul','',
       wrap(F,3,'li','','ACQUIRING: '+unpack(craft.skills.data.acquiring))+
-      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.data.employing))+
-      wrap(T,3,'li','','MASTERING: '+unpack(craft.skills.data.mastering))
+      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.data.employing))
     ) if not w else '')
   )+
   wrap(T,1,'section','additional',

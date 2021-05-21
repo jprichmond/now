@@ -1,0 +1,64 @@
+
+
+     /////   ///     ////    ////   ///   //    //////   //  /////  //   // ///    ///   ////   ///   // /////
+       //  // //  //      //    // ////  //    //   //  // //   // //   // ////  //// //    // ////  // //  //
+      // //   //   ///   //    // // /////    //////   // //      /////// // //// // //    // // ///// //   //
+//   // ///////      // //    // //   ///    //   //  // //   // //   // //  //  // //    // //   // //   //
+/////  //   // //////    ////   //    //    //    // //  /////  //   // //      //   ////   //   // //////
+
+
+                              EMAIL: me@jason.richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is
+
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+        * M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains
+          seeking to further expand software engineering capabilities in a professional setting.
+        * Offers five years experience developing programs in an academic setting in addition to
+          teaching students of all ages and aptitudes the art of programming.
+        * Thrives in collaborative work environments where ego takes a backseat to doing great work
+          and solving the problem at hand.
+        * Dealt with clients and engineered solutions for small businesses in prior career.
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+WEB DEVELOPMENT SKILLS                                                                          WORK EXPERIENCE
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     *-------------------------------------------------------------------------*
+ACQUIRING:                          LEAD INSTRUCTOR                                                 2018 ~ 2020
+  Full-stack Development              SOUTH BEND CODE SCHOOL
+  Microservices                       * Crafted interactive learning path spanning eleven lessons of around 25k
+  REST                                  words in p5.js, giving students an introduction to class-based object-
+  Serverless                            oriented programming.
+  Angular                             * Laid a concrete foundation for primary and secondary school students to
+  Django                                build out abstract programming concepts using Scratch, Web Dev, Unity, 
+  NoSQL                                 Javascript, and Python.
+  React                               * Attended to the struggling to help them understand that coding is about
+  Redux                                 embracing failure and not giving up.
+  Typescript                          * Entrusted with running the Elkhart branch and being liazon to local 
+EMPLOYING:                          
+  Front-end Web Design              *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Node.js                           LEARNING FACILITATOR                                            2016 ~ 2019
+  Docker                              ACADEMIC CENTER FOR EXCELLENCE
+  p5.js                               * Equipped dozens of graduates and undergraduates of all levels having
+  Javascript                            trouble grokking the theory and practice of Computer Science with the
+  C#                                    knowledge and skills to succeed.
+  HTML                                * Debugged hundreds of student-written programs, usually on a tight
+  CSS                                   deadline before submission without reference to a working answer.
+  Markdown                            * Convinced the department to retain early Friday hours for those getting
+                                        a head start on the weekend.
+DATA ENGINEERING SKILLS               * Collaborated with professors to help compress the complex world of code
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*         into the tangible everyday for entry-level students.
+ACQUIRING:                          
+  MySQL                             *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Pandas                                                                                              EDUCATION
+  PySpark                           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Hadoop                            MASTER OF SCIENCE ~ COMPUTER SCIENCE                                   2021
+  Entity Framework                    INDIANA UNIVERSITY SOUTH BEND                                    GPA: 3.7
+  LINQ                                * Studied a wide spectrum in the discipline, from artificial intelligence
+  R                                     to algorithm analysis, networking to neural networks, graphics to
+EMPLOYING:                              games, even writing the opcodes for a simulated CPU to run a puck-like
+  Machine Learning                      robot with programmed with enough AI to navigate a maze.
+  AI                                *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Neural Networks                   DOES THIS PRINT
+  SQL                               MASTER’S PROJECT ~ Master’s Project
+  Machine Learning                                *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+EMPLOYING:                            * Studied a wide spectrum in the discipline, from artificial intelligence
+  Procedural Programming                to algorithm analysis, networking to neural networks, graphics to
+  Functional Programming (FP)           games, even writing the opcodes for a simulated CPU to run a puck-like
+  Unit Testing                          robot with programmed with enough AI to navigate a maze.
