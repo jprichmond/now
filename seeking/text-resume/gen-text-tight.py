@@ -1,9 +1,9 @@
 import json; from collections import namedtuple; from datetime import date as d
 ###############################################################################################################
-resume = open('../data.json'); date = d.today().strftime('%Y.%m.%d')
+resume = open('../data.json'); date = d.today().strftime('%Y.%m.%d'); nl = '\n'; text = ''
 dat = json.load(resume,object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
-info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; web = craft.skills.web; data = craft.skills.data 
-cl = 31; gut = 5; cr = 75; bs = '\\'; t = 2; indent = 8; full = cl + gut + cr; nl = '\n'; text = ''
+info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; web = craft.skills.web; data = craft.skills.data; 
+dev = craft.skills.dev; cl = 31; gut = 5; cr = 75; t = 2; dent = 8; full = cl + gut + cr
 # DISPLAY NAME IN LARGE ASCII FONT ############################################################################
 def display(l,s=''):
   for i in range(len(l)):
@@ -19,47 +19,47 @@ e = [0,5,2,2,3,2,1,6,4,4,3,2,4,2,4,2,4,2,1,2,2,5,2,2,3,2,1,2,6,2,3,4,3,2,4,2,1,6
 info_fields = f'EMAIL: {info.email} ~ TEXT: {info.phone} ~ SITE: {info.site}'
 full_column = [nl,display(a),display(b),display(c),display(d),display(e),nl,
 f'''{(full-len(info_fields)-7)*' '}{info_fields}\n\n*{(full-2)*'~'}*''',
-f'''{indent*' '}* {info.text[0][:91]}\n{indent*' '}  {info.text[0][92:]}''',
-f'''{indent*' '}* {info.text[1][:86]}\n{indent*' '}  {info.text[1][87:]}''',
-f'''{indent*' '}* {info.text[2][:89]}\n{indent*' '}  {info.text[2][90:180]}''',
-f'''{indent*' '}* {info.text[3][:91]}\n*{(full-2)*'~'}*''']
+f'''{dent*' '}* {info.text[0][:91]}\n{dent*' '}  {info.text[0][92:]}''',
+f'''{dent*' '}* {info.text[1][:86]}\n{dent*' '}  {info.text[1][87:]}''',
+f'''{dent*' '}* {info.text[2][:89]}\n{dent*' '}  {info.text[2][90:180]}''',
+f'''{dent*' '}* {info.text[3][:91]}\n*{(full-2)*'~'}*''']
 # WEB SKILLS ACQUIRING ########################################################################################
-wds = 'web development skills'; lvl = 'acquiring'; w = web.acquiring; 
+wds = web.name; w = web.acquiring; n,ac,em = web._fields
 left_column = [f'''{f'{wds.upper()}'+(cl-len(f'{wds}'))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{lvl.upper()}:{(cl-len(lvl+':'))*' '}{gut*' '}''',f'''{t*' '}{w[0]+(cl-len(w[0])-t)*' '}{gut*' '}''',
+f'''{ac.upper()}:{(cl-len(ac+':'))*' '}{gut*' '}''',f'''{t*' '}{w[0]+(cl-len(w[0])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[1]+(cl-len(w[1])-t)*' '}{gut*' '}''',f'''{t*' '}{w[2]+(cl-len(w[2])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[3]+(cl-len(w[3])-t)*' '}{gut*' '}''',f'''{t*' '}{w[4]+(cl-len(w[4])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[5]+(cl-len(w[5])-t)*' '}{gut*' '}''',f'''{t*' '}{w[6]+(cl-len(w[6])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[7]+(cl-len(w[7])-t)*' '}{gut*' '}''',f'''{t*' '}{w[8]+(cl-len(w[8])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[9]+(cl-len(w[9])-t)*' '}{gut*' '}''']
 # WEB SKILLS EMPLOYING ########################################################################################
-lvl = 'employing'; w = web.employing; left_column += [f'''{lvl.upper()}:{(cl-len(lvl+':'))*' '}{gut*' '}''',
+w = web.employing; left_column += [f'''{em.upper()}:{(cl-len(em+':'))*' '}{gut*' '}''',
 f'''{t*' '}{w[0]+(cl-len(w[0])-t)*' '}{gut*' '}''',f'''{t*' '}{w[1]+(cl-len(w[1])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[2]+(cl-len(w[2])-t)*' '}{gut*' '}''',f'''{t*' '}{w[3]+(cl-len(w[3])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[4]+(cl-len(w[4])-t)*' '}{gut*' '}''',f'''{t*' '}{w[5]+(cl-len(w[5])-t)*' '}{gut*' '}''',
 f'''{t*' '}{w[6]+(cl-len(w[6])-t)*' '}{gut*' '}''',f'''{t*' '}{w[7]+(cl-len(w[7])-t)*' '}{gut*' '}''',
 f'''*{(cl-2)*'~'}*{(gut)*' '}''']
 # DATA SKILLS ACQUIRING #######################################################################################
-lvl = 'acquiring'; d = data.acquiring; des = 'data engineering skills'
+des = data.name; d = data.acquiring
 left_column += [f'''{f'{des.upper()}'+(cl-len(f'{des}'))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{lvl.upper()}:{(cl-len(lvl+':'))*' '}{gut*' '}''',f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',
+f'''{ac.upper()}:{(cl-len(ac+':'))*' '}{gut*' '}''',f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''']
 # DATA SKILLS EMPLOYING #######################################################################################
-lvl = 'employing'; d = data.employing; left_column += [f'''{lvl.upper()}:{(cl-len(lvl+':'))*' '}{gut*' '}''',
+d = data.employing; left_column += [f'''{em.upper()}:{(cl-len(em+':'))*' '}{gut*' '}''',
 f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',
 f'''*{(cl-2)*'~'}*{(gut)*' '}''']
 # OTHER DEV KNOW-HOW ##########################################################################################
-add = 'additional know-how'; d = craft.skills.dev
+add = dev.name; d = dev.employing
 left_column += [f'''{add.upper()}{(cl-len(add))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
 f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',f'''{t*' '}{d[6]+(cl-len(d[6])-t)*' '}{gut*' '}''',
 f'''{t*' '}{d[7]+(cl-len(d[7])-t)*' '}{gut*' '}''',f'''{t*' '}{d[8]+(cl-len(d[8])-t)*' '}{gut*' '}''',]
 # WORK EXPERIENCE #############################################################################################
-wex = 'work experience'; sbcs = work.sbcs; yrs = f'{sbcs.start} ~ {sbcs.end}'
+wex = work.name; sbcs = work.sbcs; yrs = f'{sbcs.start} ~ {sbcs.end}'
 right_column = [f'''{(cr-len(f'{wex}'))*' '}{wex.upper()}''',f'''*{(cr-2)*'~'}*''',
 # SBCS ########################################################################################################
 f'''{sbcs.role.upper()}{(cr-len(sbcs.role)-len(yrs))*' '}{yrs}''',f'''  {sbcs.name.title()}''',
@@ -74,9 +74,9 @@ f'''  {ace.name.title()}''',f'''  * {ace.text[0][:68]}''',f'''    {ace.text[0][6
 f'''    {ace.text[0][139:]}''',f'''  * {ace.text[1][:70]}-''',f'''    {ace.text[1][70:]}''',
 f'''  * {ace.text[2][:71]}''',f'''    {ace.text[2][72:]}''',f'''  * {ace.text[3][:71]}''',
 f'''    {ace.text[3][72:]}''','',f'''*{(cr-2)*'~'}*''']
-# EDUCATION ###################################################################################################
-edu = 'education'; grad = ed.grad; deg = f'{grad.degree.upper()} ~ {grad.major.title()}'; g = 'gpa: '
-right_column += [f'''{(cr-len(f'{edu}'))*' '}{edu.upper()}''',f'''*{(cr-2)*'~'}*''']
+# ACADEMIC EXPERIENCE #########################################################################################
+aex = ed.name; grad = ed.grad; deg = f'{grad.degree.upper()} ~ {grad.major.title()}'; g = 'gpa: '
+right_column += [f'''{(cr-len(f'{aex}'))*' '}{aex.upper()}''',f'''*{(cr-2)*'~'}*''']
 # GRAD ########################################################################################################
 right_column += [f'''{deg}{(cr-len(deg)-len(grad.year))*' '}{grad.year}''', 
 f'''  {grad.school.title()}{(cr-len(grad.school)-len(g)-len(str(grad.gpa))-2)*' '}{g.upper()}{grad.gpa}''',
@@ -96,4 +96,4 @@ leftright = zip(left_column,right_column)
 for line in leftright:
   text += line[0] + line[1] + '\n'
 # WRITE TO TEXT FILE ##########################################################################################
-output = open('../text-resume/resume.txt', 'w');output.write(text)
+output = open('../text-resume/current.txt', 'w');output.write(text)

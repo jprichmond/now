@@ -2,14 +2,14 @@
 
 fs = require('fs')
 const job = ``
-const position = job? job : `in a professional setting`
+const position = job? job : `a Software Engineer`
 
 const info = {
   name:`Jason Richmond`,
   email:`me@jason.richmond.is`,
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
-  text: [`M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software engineering capabilities ${position}.`,`Offers five years experience developing programs in an academic setting in addition to teaching students of all ages and aptitudes the art of programming.`,`Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.`,`Dealt with clients and engineered solutions for small businesses in prior career.`]
+  text: [`M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software development capabilities as ${position}.`,`Offers five years experience crafting programs in an academic setting in addition to teaching students of all ages and aptitudes the art of programming.`,`Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.`,`Dealt with clients and built solutions for small businesses in prior career.`]
 }
 const ed = {
   name: `Academic Experience`,

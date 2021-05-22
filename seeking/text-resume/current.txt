@@ -11,12 +11,12 @@
 
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
         * M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains
-          seeking to further expand software engineering capabilities in a professional setting.
-        * Offers five years experience developing programs in an academic setting in addition to
-          teaching students of all ages and aptitudes the art of programming.
+          seeking to further expand software development capabilities as a Software Engineer.
+        * Offers five years experience crafting programs in an academic setting in addition to t
+          aching students of all ages and aptitudes the art of programming.
         * Thrives in collaborative work environments where ego takes a backseat to doing great work
           and solving the problem at hand.
-        * Dealt with clients and engineered solutions for small businesses in prior career.
+        * Dealt with clients and built solutions for small businesses in prior career.
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 WEB DEVELOPMENT SKILLS                                                                          WORK EXPERIENCE
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
@@ -48,7 +48,7 @@ ACQUIRING:                              a head start on the weekend.
   Pandas                                into the tangible everyday for entry-level students.
   PySpark                           
   Hadoop                            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  R                                                                                                   EDUCATION
+  R                                                                                         ACADEMIC EXPERIENCE
 EMPLOYING:                          *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
   Machine Learning                  MASTER OF SCIENCE ~ Computer Science                                   2021
   Neural Networks                     Indiana University South Bend                                    GPA: 3.7
