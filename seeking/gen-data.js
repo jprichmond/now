@@ -106,9 +106,8 @@ skills: {
     employing: [
       `Object-oriented Programming`,
       `Procedural Programming`,
-      `Functional Programming (FP)`,
+      `Functional Programming`,
       `Unit Testing`,
-      `Test-driven Development`,
       `Gang of Four Design Patterns`,
       `UI/UX Design`,
       `Git`,

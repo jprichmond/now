@@ -16,7 +16,7 @@ c = [6,2,1,2,3,2,3,3,3,2,4,2,1,2,1,5,4,6,3,2,1,2,6,7,1,2,1,4,1,2,1,2,4,2,1,2,1,5
 d = [0,2,3,2,1,7,6,2,1,2,4,2,1,2,3,3,4,2,3,2,2,2,1,2,3,2,1,2,3,2,1,2,2,2,2,2,1,2,4,2,1,2,3,3,1,2,3,2]
 e = [0,5,2,2,3,2,1,6,4,4,3,2,4,2,4,2,4,2,1,2,2,5,2,2,3,2,1,2,6,2,3,4,3,2,4,2,1,6]
 # CONTACT INFORMATION AND AIM #################################################################################
-info_fields = f'EMAIL: {info.email} ~ TEXT: {info.phone} ~ SITE: {info.site}'
+info_fields = f'EMAIL: {info.email} ~ TEXT: {info.phone} ~ SITE: {info.site} ~ DATE: {date}'
 full_column = [nl,display(a),display(b),display(c),display(d),display(e),nl,
 f'''{(full-len(info_fields)-7)*' '}{info_fields}\n\n*{(full-2)*'~'}*''',
 f'''{dent*' '}* {info.text[0][:91]}\n{dent*' '}  {info.text[0][92:]}''',
@@ -54,10 +54,10 @@ f'''*{(cl-2)*'~'}*{(gut)*' '}''']
 # OTHER DEV KNOW-HOW ##########################################################################################
 add = dev.name; d = dev.employing
 left_column += [f'''{add.upper()}{(cl-len(add))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',f'''{t*' '}{d[6]+(cl-len(d[6])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[7]+(cl-len(d[7])-t)*' '}{gut*' '}''',f'''{t*' '}{d[8]+(cl-len(d[8])-t)*' '}{gut*' '}''',]
+f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[6]+(cl-len(d[6])-t)*' '}{gut*' '}''',f'''{t*' '}{d[7]+(cl-len(d[7])-t)*' '}{gut*' '}''',]
 # WORK EXPERIENCE #############################################################################################
 wex = work.name; sbcs = work.sbcs; yrs = f'{sbcs.start} ~ {sbcs.end}'
 right_column = [f'''{(cr-len(f'{wex}'))*' '}{wex.upper()}''',f'''*{(cr-2)*'~'}*''',
