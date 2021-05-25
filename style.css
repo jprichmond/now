@@ -54,6 +54,10 @@ i {
   font-family: "Zilla Slab", serif;
   font-weight: 500;
 }
+pre {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+}
 .info li{
   list-style-type: none;
 }
