@@ -58,6 +58,10 @@ pre {
   font-family: "DM Mono", monospace;
   font-weight: 400;
 }
+.home li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
 .info li{
   list-style-type: none;
 }
