@@ -96,9 +96,9 @@ leftright = zip(left_column,right_column)
 for line in leftright:
   text += line[0] + line[1] + '\n'
 # WRITE TO TEXT FILE ##########################################################################################
-output = open('../text-resume/current.txt', 'w');output.write(text)
+output = open('../text-resume/seeking.txt', 'w');output.write(text)
 # GENERATE HTML VERSION OF TEXT FILE
-output = open('../../seeking.html', 'w');output.write(f'''\
+output = open('../../seeking-text.html', 'w');output.write(f'''\
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
