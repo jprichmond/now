@@ -61,6 +61,9 @@ pre {
 .home li {
   list-style-type: none;
   margin-bottom: 20px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-size: large;
 }
 .info li{
   list-style-type: none;
