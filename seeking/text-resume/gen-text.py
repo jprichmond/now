@@ -97,4 +97,20 @@ for line in leftright:
   text += line[0] + line[1] + '\n'
 # WRITE TO TEXT FILE ##########################################################################################
 output = open('../text-resume/current.txt', 'w');output.write(text)
-output = open('../../text-resume.html', 'w');output.write(f'<pre>\n{text}\n</pre>')
+# GENERATE HTML VERSION OF TEXT FILE
+output = open('../../seeking.html', 'w');output.write(f'''\
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jason Paul Richmond</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<body class="content"><pre>
+{text}
+</pre>')''')
