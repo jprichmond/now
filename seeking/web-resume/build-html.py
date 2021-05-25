@@ -72,14 +72,14 @@ body = wrap(F,0,'body','content',
   wrap(F,1,'header','info',
     wrap(F,2,'h1','name',info.name)+
     wrap(T,2,'ul','info',
-      wrap(F,2,'li','site',date)+
-      wrap(T,2,'li','site',info.site)+
-      wrap(T,2,'li','email',
+      wrap(F,2,'li','email',
         wrap(F,3,'script','',f'document.write(unscramble({scrambledEmail}))')
       )+
       wrap(T,2,'li','phone',
         wrap(F,3,'script','',f'document.write(unscramble({scrambledPhone}))')
-      )
+      )+
+      wrap(T,2,'li','site',info.site)+
+      wrap(T,2,'li','site',date)
     )
   )+
   wrap(T,1,'section','aim',

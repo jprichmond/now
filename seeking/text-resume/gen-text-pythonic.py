@@ -190,3 +190,5 @@ for line in leftright:
 # WRITE TO TEXT FILE ###########################################################
 output = open('../text-resume/current.txt', 'w')
 output.write(text)
+output = open('../../text-resume.html', 'w')
+output.write(f'<pre>\n{text}\n</pre>')

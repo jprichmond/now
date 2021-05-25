@@ -90,12 +90,11 @@ f'''*{(cr-2)*'~'}*''']
 un = ed.undergrad; maj = f'''{un.major.anth.title()}, {un.major.ling.title()}, {un.major.econ.title()}'''
 right_column += [f'''{un.degree.upper()} ~ {maj}''',f'''  {un.school.title()}''']
 # PRINT TEXT ##################################################################################################
-text = '<pre>\n'
 for line in full_column:
   text += line + '\n'
 leftright = zip(left_column,right_column)
 for line in leftright:
   text += line[0] + line[1] + '\n'
-text += '\n</pre>'
 # WRITE TO TEXT FILE ##########################################################################################
-output = open('../text-resume/current.html', 'w');output.write(text)
+output = open('../text-resume/current.txt', 'w');output.write(text)
+output = open('../../text-resume.html', 'w');output.write(f'<pre>\n{text}\n</pre>')
