@@ -1,3 +1,4 @@
+const log = console.log
 const size = 17, maxWord = 15, held = 1, seized = 2
 
 
@@ -28,9 +29,23 @@ class Sky {
   update(val, pos) {
     this.sky[pos.y][pos.x] = val
   }
+  display() {
+    let s = `           layer↓  A B C D E F G H I J K L M N O P Q→RAY↙︎\n`
+    let space = 18, l = 0
+    for (let layer of this.sky) {
+      for (let sp = 0; sp < space; sp++)
+        space - sp === 2? s += `${Cloud.alpha[space-2]}` : s += ` `
+      for (let ray of layer)
+        ray === 0? s += `/ ` : s += `${ray} `
+      s += `\n`
+      space--
+    }
+    log(s)
+  }
 }
 
 class Cloud {
+  static alpha = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`,`t`,`u`,`v`,`w`,`x`,`y`,`z`]
   static letters = [
     'e','e','e','e','e','e','e','e','e','e','e',
     't','t','t','t','t','t','t','t','t',
@@ -67,7 +82,6 @@ class Play {
     this.col = col
     this.dir = dir
   }
-
 }
 
 function deepCopy(from) {
@@ -87,5 +101,4 @@ function deepCopy(from) {
 }
 
 const current = new Sky()
-console.log(current.sky)
-// console.log(Sky.blue)
+current.display()
