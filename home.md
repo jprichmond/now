@@ -1,9 +1,8 @@
 ## Hello There
 
-You have reached the personal page of yours truly, Jason Richmond. It’s currently under construction if writing about oneself can be considered constructive.
+You have reached the personal page of yours truly, Jason Richmond. There are few things here with more to come
 
-In the meantime, take a look at my code [resumé](resume.html)
-
+Have a look at my code [resumé](resume.html) and the [text version](text-resume.html)
 
 And for something more fun — play around with these:
 
