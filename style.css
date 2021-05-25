@@ -57,6 +57,7 @@ i {
 pre {
   font-family: "DM Mono", monospace;
   font-weight: 400;
+  font-size: small;
 }
 .home li {
   list-style-type: none;

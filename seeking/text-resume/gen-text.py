@@ -113,4 +113,4 @@ output = open('../../seeking-text.html', 'w');output.write(f'''\
 <link rel="stylesheet" href="style.css">
 <body class="content"><pre>
 {text}
-</pre>')''')
+</pre>''')
