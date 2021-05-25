@@ -12,5 +12,3 @@ And for something more fun — play around with these:
 * [Faces Collide](https://editor.p5js.org/counternote/sketches/sTdxjpT5k): A simple implementation of collisions in p5.js created during a research phase of the Javascript tutorial. The logic was ripped from a math paper on linear algebra.
   
 * [Moon Phases](https://editor.p5js.org/counternote/sketches/cz1dAjMmn): A exploration in bezier curves within p5.js to create crescents and eyes turned into the phases of the moon. The logic here came from learning about magic number kappa (not even Kappa).
-
-* [Cloudletters](): A proof of concept for a strategy word game implemented in C-flavored C++ using the C pthreads library for parallel processing to speed up word matches.
