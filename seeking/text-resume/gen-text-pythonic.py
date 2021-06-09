@@ -172,8 +172,8 @@ proj = ed.grad.project
 right_column += [
      f'''{proj.name.upper()} ~ {proj.title.title()}''',
      f'''  * {proj.text[0][:66]}''',
-     f'''    {proj.text[0][67:134]}-''', f'''    {proj.text[0][134:199]}-''', f'''    {proj.text[0][199:]}''', '',
-     f'''*{(cr-2)*'~'}*'''
+     f'''    {proj.text[0][67:134]}-''', f'''    {proj.text[0][134:199]}-''',
+     f'''    {proj.text[0][199:]}''', '', f'''*{(cr-2)*'~'}*'''
 ]
 # UNDERGRAD ####################################################################
 un = ed.undergrad
