@@ -7,7 +7,7 @@
 /////  //   // //////    ////   //    //    //    // //  /////  //   // //      //   ////   //    // //////
 
 
-           EMAIL: me@jason.richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2021.05.25
+           EMAIL: me@jason.richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2021.06.09
 
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
         * M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains
@@ -59,10 +59,10 @@ EMPLOYING:                          *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     
 ADDITIONAL KNOW-HOW                 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*     MASTER’S PROJECT ~ Counternote Compiler
-  Object-oriented Programming         * Implemented a compiler for an original musical language written in
-  Procedural Programming                7-bit ASCII, designed to be readable, typeable, singable, and share-
-  Functional Programming                able, with chromaticism, music theory, and rhythm built in to com-
-  Unit Testing                          plement the diatonicity of traditional notation.
+  Object-oriented Programming         * Implementing a compiler for an original musical language written i
+  Procedural Programming                 7-bit ASCII, designed to be readable, typeable, singable, and shar-
+  Functional Programming                eable, with chromaticism, music theory, and rhythm built in to co-
+  Unit Testing                          mplement the diatonicity of traditional notation.
   Gang of Four Design Patterns      
   UI/UX Design                      *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
   Git                               BACHELOR OF ARTS ~ Anthropology, Linguistics, Economics

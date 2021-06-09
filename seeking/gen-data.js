@@ -23,7 +23,7 @@ const ed = {
     project: {
       name:`Master’s Project`,
       title:`Counternote Compiler`,
-      text: [`Implemented a compiler for an original musical language written in 7-bit ASCII, designed to be readable, typeable, singable, and shareable, with chromaticism, music theory, and rhythm built in to complement the diatonicity of traditional notation.`,`Launching a domain-specific alpha at the end of the summer with sights on publication and a Turing complete beta by the end of 2021.`]
+      text: [`Implementing a compiler for an original musical language written in 7-bit ASCII, designed to be readable, typeable, singable, and shareable, with chromaticism, music theory, and rhythm built in to complement the diatonicity of traditional notation.`,`Launching a domain-specific alpha at the end of the summer with sights on publication and a Turing complete beta by the end of 2021.`]
     }
   },
   undergrad: {
@@ -121,6 +121,6 @@ out = JSON.stringify(out)
 // console.log(out)
 
 const err = new Error('failed to write to file')
-fs.writeFile('../data.json', out, (err) => {
+fs.writeFile('data.json', out, (err) => {
   err? console.log(err) : console.log("file written successfully")
 });
