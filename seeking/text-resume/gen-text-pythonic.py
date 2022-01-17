@@ -1,11 +1,11 @@
 import json
 from collections import namedtuple
-from datetime import date as d
+from datetime import date
 ################################################################################
 resume = open('../data.json')
 dat = json.load(resume, object_hook=lambda d: namedtuple(
-    'X', d.keys())(*d.values()))
-date = d.today().strftime('%Y.%m.%d')
+    'X', date.keys())(*d.values()))
+date = date.today().strftime('%Y.%m.%d')
 nl = '\n'
 text = ''
 info = dat[0]

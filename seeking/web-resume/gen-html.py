@@ -32,7 +32,7 @@ scrambledEmail = obfuscate(spannerWorks(info.email))
 def unpack(array):
   h = ''
   for val in array:
-      h += f'{val}, '
+    h += f'{val}, '
   h = h[:-2]
   return h
 
