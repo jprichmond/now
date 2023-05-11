@@ -81,10 +81,10 @@ body = wrap(F,0,'body','content',
       wrap(F,2,'li','email',
         wrap(F,3,'script','',f'document.write(unscramble({scrambledEmail}))')
       )+
+      wrap(T,2,'li','site',info.site)+
       wrap(T,2,'li','phone',
         wrap(F,3,'script','',f'document.write(unscramble({scrambledPhone}))')
       )+
-      wrap(T,2,'li','site',info.site)+
       wrap(T,2,'li','site',date)
     )
   )+
@@ -96,22 +96,21 @@ body = wrap(F,0,'body','content',
   wrap(T,1,'section','work',
     wrap(F,2,'h2','heading','Work Experience')+
     wrap(T,2,'h3','role',work.aun.role)+
-    wrap(T,2,'h4','workplace',work.aun.name.upper()+
+    wrap(T,2,'h4','place',work.aun.name.upper()+
       wrap(F,0,'span','right',f'{work.aun.start}'+' ~ '+f'{work.aun.end}')
     )+
     wrap(T,2,'ul','aun',
       iter(work.aun.text,3)
     )+
     wrap(T,2,'h3','role',work.sbcs.role)+
-    wrap(T,2,'h4','workplace',work.sbcs.name.upper()+
+    wrap(T,2,'h4','place',work.sbcs.name.upper()+
       wrap(F,0,'span','right',f'{work.sbcs.start}'+' ~ '+f'{work.sbcs.end}')
     )+
     wrap(T,2,'ul','sbcs',
       iter(work.sbcs.text,3)
     )+
-    wrap(T,2,'h3','work',work.ace.role+' ~ '+work.ace.cs
-    )+
-    wrap(T,2,'h4','work',work.ace.name.upper()+
+    wrap(T,2,'h3','role',work.ace.role+' ~ '+work.ace.cs)+
+    wrap(T,2,'h4','place',work.ace.name.upper()+
       wrap(F,0,'span','right',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
     )+
     wrap(F,2,'ul','ace',
@@ -128,7 +127,7 @@ body = wrap(F,0,'body','content',
     wrap(F,2,'h2','heading','Academic Experience')+
     wrap(T,2,'h3','role',ed.grad.degree)+
     wrap(T,2,'h4','place',ed.grad.school.upper()+
-      wrap(F,0,'span','',ed.grad.year)
+      wrap(F,0,'span','right',ed.grad.year)
     )+
     wrap(T,2,'ul','sbcs',
       wrap(F,3,'li','',ed.grad.text[0])
