@@ -114,26 +114,25 @@ body = wrap(F,0,'body','content',
       wrap(T,3,'li','',work.ace.text[3])
     )
   )+
-  wrap(T,1,'section','skills',
-    wrap(F,2,'h2','title',f'{web_dev} Skills')+
-    wrap(T,2,'ul','',
-      wrap(F,3,'li','','ACQUIRING: '+unpack(craft.skills.web.acquiring))+
-      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.web.employing))
-    )
-  )+
+  # wrap(T,1,'section','skills',
+  #   wrap(F,2,'h2','title',f'{web_dev} Skills')+
+  #   wrap(T,2,'ul','',
+  #     wrap(F,3,'li','','ACQUIRING: '+unpack(craft.skills.web.acquiring))+
+  #     wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.web.employing))
+  #   )
+  # )+
   wrap(T,1,'section','skills',
     wrap(F,2,'h2','title',f'{data_eng} Skills')+
     wrap(T,2,'ul','',
-      wrap(F,3,'li','','ACQUIRING: '+unpack(craft.skills.data.acquiring))+
-      wrap(T,3,'li','','EMPLOYING: '+unpack(craft.skills.data.employing))
+      wrap(F,3,'li','',unpack(craft.skills.eng))
     )
   )+
-  wrap(T,1,'section','additional',
-    wrap(F,2,'h2','title','Additional Know-how')+
-    wrap(T,2,'ul','',
-      wrap(F,3,'li','',unpack(craft.skills.dev.employing))
-    )
-  )+
+  # wrap(T,1,'section','additional',
+  #   wrap(F,2,'h2','title','Additional Know-how')+
+  #   wrap(T,2,'ul','',
+  #     wrap(F,3,'li','',unpack(craft.skills.dev.employing))
+  #   )
+  # )+
   wrap(T,1,'section','education',
     wrap(F,2,'h2','heading','Academic Experience')+
     wrap(T,2,'h3','role',ed.grad.degree)+
@@ -142,12 +141,12 @@ body = wrap(F,0,'body','content',
     )+
     wrap(T,2,'ul','sbcs',
       wrap(F,3,'li','',ed.grad.text[0])
-    )+
+    # )+
 
-    wrap(T,2,'h4','project',ed.grad.project.name.upper())+
-    wrap(F,2,'ul','project',
-      wrap(F,3,'li','',ed.grad.project.text[0])+
-      wrap(T,3,'li','',ed.grad.project.text[1])
+    # wrap(T,2,'h4','project',ed.grad.project.name.upper())+
+    # wrap(F,2,'ul','project',
+    #   wrap(F,3,'li','',ed.grad.project.text[0])+
+    #   wrap(T,3,'li','',ed.grad.project.text[1])
     )
   )
 )
