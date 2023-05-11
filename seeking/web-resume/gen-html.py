@@ -43,6 +43,12 @@ def wrap(n,l,t,c,v): # newline, indent level, html tag, html class, value
   c = f' class="{c}"' if c else ''
   return f'{n}<{t}{c}>\n{s*l}  {v}\n{s*l}</{t}>'
 
+def iter(a,l): # array of text strings, indent level
+  s = ''
+  for i in range(len(a)):
+    s += wrap(i,l,'ul','',a[i])
+  return s
+
 unscrambleJS = '''\
 const unscramble = (dict) => {
   let text = ``, length = Object.keys(dict).length
@@ -84,23 +90,24 @@ body = wrap(F,0,'body','content',
   )+
   wrap(T,1,'section','aim',
     wrap(F,2,'ul','',
-      wrap(F,3,'li','',info.text[0])+
-      wrap(T,3,'li','',info.text[1])+
-      wrap(T,3,'li','',info.text[2])+
-      wrap(T,3,'li','',info.text[3])
+      iter(info.text,3)
     )
   )+
   wrap(T,1,'section','work',
     wrap(F,2,'h2','heading','Work Experience')+
+    wrap(T,2,'h3','role',work.aun.role)+
+    wrap(T,2,'h4','workplace',work.aun.name.upper()+
+      wrap(F,0,'span','right',f'{work.aun.start}'+' ~ '+f'{work.aun.end}')
+    )+
+    wrap(T,2,'ul','aun',
+      iter(work.aun.text,3)
+    )+
     wrap(T,2,'h3','role',work.sbcs.role)+
     wrap(T,2,'h4','workplace',work.sbcs.name.upper()+
       wrap(F,0,'span','right',f'{work.sbcs.start}'+' ~ '+f'{work.sbcs.end}')
     )+
     wrap(T,2,'ul','sbcs',
-      wrap(F,3,'li','',work.sbcs.text[0])+
-      wrap(T,3,'li','',work.sbcs.text[1])+
-      wrap(T,3,'li','',work.sbcs.text[2])+
-      wrap(T,3,'li','',work.sbcs.text[3])
+      iter(work.sbcs.text,3)
     )+
     wrap(T,2,'h3','work',work.ace.role+' ~ '+work.ace.cs
     )+
@@ -108,10 +115,7 @@ body = wrap(F,0,'body','content',
       wrap(F,0,'span','right',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
     )+
     wrap(F,2,'ul','ace',
-      wrap(F,3,'li','',work.ace.text[0])+
-      wrap(T,3,'li','',work.ace.text[1])+
-      wrap(T,3,'li','',work.ace.text[2])+
-      wrap(T,3,'li','',work.ace.text[3])
+      iter(work.sbcs.text,3)
     )
   )+
   wrap(T,1,'section','skills',
