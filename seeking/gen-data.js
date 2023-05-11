@@ -9,7 +9,7 @@ const info = {
   email:`me@jason.richmond.is`,
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
-  text: [`M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software development capabilities as ${position}.`,`Offers five years experience crafting programs in an academic setting in addition to teaching students of all ages and aptitudes the art of programming.`,`Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.`,`Dealt with clients and built solutions for small businesses in prior career.`]
+  text: [`Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build something great.`,`Offers seven years experience crafting programs collaborating with peers, and mentoring students in startup and academic settings.`,`Thrives in collaborative work environments where ego takes a backseat to solving hard problems and doing great work.`,`Experienced in remote/hybrid work environments and committed to building and maintaining a solid, productive team.`,`Approaches challenges and setbacks with a growth mindset.`]
 }
 const ed = {
   name: `Academic Experience`,
@@ -29,6 +29,7 @@ const ed = {
   undergrad: {
     degree:`Bachelor of Arts`,
     school:`Indiana University Bloomington`,
+    year:`2008`,
     gpa: 3.1,
     major: {
       anth:`Anthropology`,
@@ -39,12 +40,19 @@ const ed = {
 }
 const work = {
   name: `Work Experience`,
+  aun: {
+    name:`Aunalytics`,
+    role:`Software Engineer`,
+    start:2021,
+    end:2023,
+    text: [`Programmed solo and on teams to improve the backend of our data solutions platform written in Node.js.`,`Pushed for and piloted new team structure to better communicate and increase collaboration.`,`Contributed to initiatives to improve the robustness and fault-tolerance of our data pipeline, including features that sped up our data delivery by an order of magnitude helping us achieve our on-time delivery goal over a quarter after seldom delivering that a week.`,`Took the reins on implementing two-phase procedure of data manipulation so that only valid data would replace existing good data.`,`Investigated and implemented a dynamic solution to a logging failure impacting our ability to audit our deliverables.`,`Raised the alarm to terminate a maintenance initiative that introduced widespread and subtle bugs in our soon-to-be legacy backend.`,`Engaged in weekly learning discussions and the designing of our next generation platform written in Typescript using React.`,`Employed Agile methodologies to track planning and execution of tickets.`]
+  },
   sbcs: {
-    name:`South Bend Code school`,
+    name:`South Bend Code School`,
     role:`Lead Instructor`,
     start:2018,
     end:2020,
-    text: [`Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.`,`Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.`,`Attended to the struggling to help them understand that coding is about embracing failure and not giving up.`,`Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach.`]
+    text: [`Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.`,`Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.`,`Attended to the struggling to help them understand that coding is about embracing failure and not giving up.`,`Entrusted with running the Elkhart branch and being liaison to local schools keeping the relevant stakeholders happy and extending Code School reach.`]
   },
   ace: {
     name:`Academic Center for Excellence`,
@@ -57,64 +65,39 @@ const work = {
 }
 
 const craft = {
-skills: {
-  web: {
-    name: `Web Development Skills`,
-    acquiring: [
-      `Full-stack Development`,
-      `Microservices`,
-      `REST`,
-      `Serverless`,
-      `Angular`,
-      `Django`,
-      `NoSQL`,
-      `React`,
-      `Redux`,
-      `Typescript`,
-    ],
-    employing: [
-      `Front-end Web Design`,
-      `Node.js`,
-      `Docker`,
-      `p5.js`,
-      `Javascript`,
-      `HTML`,
-      `CSS`,
-      `Markdown`,
-    ],
-  },
-  data: {
-    name: `Data Engineering Skills`,
-    acquiring: [
-      `MySQL`,
-      `Pandas`,
-      `PySpark`,
-      `Hadoop`,
-      `R`,
-    ],
-    employing: [
-      `Machine Learning`,
-      `Neural Networks`,
-      `AI`,
-      `SQL`,
-      `Java`,
-      `Python`,
-    ],
-  },
-  dev: {
-    name: `Additional Know-how`,
-    employing: [
-      `Object-oriented Programming`,
-      `Procedural Programming`,
-      `Functional Programming`,
-      `Unit Testing`,
-      `Gang of Four Design Patterns`,
-      `UI/UX Design`,
-      `Git`,
-      `C/C++`
-    ]
-  }
-}}
+  name: `Software Development Skills`,
+  dev: [
+    `Full-stack Development`,
+    `Microservices`,
+    `REST`,
+    `React`,
+    `Redux`,
+    `MongoDB`,
+    `Typescript`,
+    `Node.js`,
+    `Docker`,
+    `Javascript`,
+    `HTML`,
+    `CSS`,
+    `Hadoop`,
+    `Machine Learning`,
+    `Neural Networks`,
+    `AI`,
+    `SQL`,
+    `Java`,
+    `Python`,
+    `Object-oriented Programming`,
+    `Procedural Programming`,
+    `Functional Programming`,
+    `Unit Testing`,
+    `UI/UX Design`,
+    `Git`,
+    `C/C++`,
+    `CI/CD`,
+
+  ]
+}
+
 
 out = [info,ed,work,craft]
 out = JSON.stringify(out)

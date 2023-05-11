@@ -94,7 +94,7 @@ body = wrap(F,0,'body','content',
     wrap(F,2,'h2','heading','Work Experience')+
     wrap(T,2,'h3','role',work.sbcs.role)+
     wrap(T,2,'h4','workplace',work.sbcs.name.upper()+
-      wrap(F,0,'span','',f'{work.sbcs.start}'+' ~ '+f'{work.sbcs.end}')
+      wrap(F,0,'span','right',f'{work.sbcs.start}'+' ~ '+f'{work.sbcs.end}')
     )+
     wrap(T,2,'ul','sbcs',
       wrap(F,3,'li','',work.sbcs.text[0])+
@@ -105,7 +105,7 @@ body = wrap(F,0,'body','content',
     wrap(T,2,'h3','work',work.ace.role+' ~ '+work.ace.cs
     )+
     wrap(T,2,'h4','work',work.ace.name.upper()+
-      wrap(F,0,'span','',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
+      wrap(F,0,'span','right',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
     )+
     wrap(F,2,'ul','ace',
       wrap(F,3,'li','',work.ace.text[0])+

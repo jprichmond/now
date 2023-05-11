@@ -93,6 +93,9 @@ pre {
 .howToDisappearCompletely {
   display: none;
 }
+.right {
+  text-align: right;
+}
 
 /* font-family: 'Oxygen', sans-serif;
 font-family: 'Merriweather Sans', sans-serif;

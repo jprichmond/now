@@ -2,8 +2,8 @@ import json; from collections import namedtuple; from datetime import date as d
 ###############################################################################################################
 resume = open('../data.json'); date = d.today().strftime('%Y.%m.%d'); nl = '\n'; text = ''
 dat = json.load(resume,object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
-info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; web = craft.skills.web; data = craft.skills.data; 
-dev = craft.skills.dev; cl = 31; gut = 5; cr = 75; t = 2; dent = 8; full = cl + gut + cr
+info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; skl = craft.skills.name; dev = craft.skills.dev
+cl = 31; gut = 5; cr = 75; t = 2; dent = 8; full = cl + gut + cr
 # DISPLAY NAME IN LARGE ASCII FONT ############################################################################
 def display(l,s=''):
   for i in range(len(l)):
@@ -23,41 +23,18 @@ f'''{dent*' '}* {info.text[0][:91]}\n{dent*' '}  {info.text[0][92:]}''',
 f'''{dent*' '}* {info.text[1][:86]}\n{dent*' '}  {info.text[1][87:]}''',
 f'''{dent*' '}* {info.text[2][:89]}\n{dent*' '}  {info.text[2][90:180]}''',
 f'''{dent*' '}* {info.text[3][:91]}\n*{(full-2)*'~'}*''']
-# WEB SKILLS ACQUIRING ########################################################################################
-wds = web.name; w = web.acquiring; n,ac,em = web._fields
-left_column = [f'''{f'{wds.upper()}'+(cl-len(f'{wds}'))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{ac.upper()}:{(cl-len(ac+':'))*' '}{gut*' '}''',f'''{t*' '}{w[0]+(cl-len(w[0])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[1]+(cl-len(w[1])-t)*' '}{gut*' '}''',f'''{t*' '}{w[2]+(cl-len(w[2])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[3]+(cl-len(w[3])-t)*' '}{gut*' '}''',f'''{t*' '}{w[4]+(cl-len(w[4])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[5]+(cl-len(w[5])-t)*' '}{gut*' '}''',f'''{t*' '}{w[6]+(cl-len(w[6])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[7]+(cl-len(w[7])-t)*' '}{gut*' '}''',f'''{t*' '}{w[8]+(cl-len(w[8])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[9]+(cl-len(w[9])-t)*' '}{gut*' '}''']
-# WEB SKILLS EMPLOYING ########################################################################################
-w = web.employing; left_column += [f'''{em.upper()}:{(cl-len(em+':'))*' '}{gut*' '}''',
-f'''{t*' '}{w[0]+(cl-len(w[0])-t)*' '}{gut*' '}''',f'''{t*' '}{w[1]+(cl-len(w[1])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[2]+(cl-len(w[2])-t)*' '}{gut*' '}''',f'''{t*' '}{w[3]+(cl-len(w[3])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[4]+(cl-len(w[4])-t)*' '}{gut*' '}''',f'''{t*' '}{w[5]+(cl-len(w[5])-t)*' '}{gut*' '}''',
-f'''{t*' '}{w[6]+(cl-len(w[6])-t)*' '}{gut*' '}''',f'''{t*' '}{w[7]+(cl-len(w[7])-t)*' '}{gut*' '}''',
-f'''*{(cl-2)*'~'}*{(gut)*' '}''']
-# DATA SKILLS ACQUIRING #######################################################################################
-des = data.name; d = data.acquiring
-left_column += [f'''{f'{des.upper()}'+(cl-len(f'{des}'))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{ac.upper()}:{(cl-len(ac+':'))*' '}{gut*' '}''',f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''']
-# DATA SKILLS EMPLOYING #######################################################################################
-d = data.employing; left_column += [f'''{em.upper()}:{(cl-len(em+':'))*' '}{gut*' '}''',
-f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',
-f'''*{(cl-2)*'~'}*{(gut)*' '}''']
-# OTHER DEV KNOW-HOW ##########################################################################################
-add = dev.name; d = dev.employing
-left_column += [f'''{add.upper()}{(cl-len(add))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
-f'''{t*' '}{d[0]+(cl-len(d[0])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(d[1])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[2]+(cl-len(d[2])-t)*' '}{gut*' '}''',f'''{t*' '}{d[3]+(cl-len(d[3])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[4]+(cl-len(d[4])-t)*' '}{gut*' '}''',f'''{t*' '}{d[5]+(cl-len(d[5])-t)*' '}{gut*' '}''',
-f'''{t*' '}{d[6]+(cl-len(d[6])-t)*' '}{gut*' '}''',f'''{t*' '}{d[7]+(cl-len(d[7])-t)*' '}{gut*' '}''',]
+# DEV SKILLS ##################################################################################################
+left_column = [f'''{skl.upper()}{(cl-len(skl.name))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[0])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[1])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[2])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[3])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[4])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[5])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[6])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[7])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[8])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[9])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[10])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[11])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[12])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[13])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[14])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[15])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[16])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[17])-t)*' '}{gut*' '}''',
+f'''{t*' '}{d[0]+(cl-len(dev[18])-t)*' '}{gut*' '}''',f'''{t*' '}{d[1]+(cl-len(dev[19])-t)*' '}{gut*' '}''',]
 # WORK EXPERIENCE #############################################################################################
 wex = work.name; sbcs = work.sbcs; yrs = f'{sbcs.start} ~ {sbcs.end}'
 right_column = [f'''{(cr-len(f'{wex}'))*' '}{wex.upper()}''',f'''*{(cr-2)*'~'}*''',
