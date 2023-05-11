@@ -1,1 +1,56 @@
-[{"name":"Jason Richmond","email":"me@jason.richmond.is","site":"jason.richmond.is","phone":"574.855.6954","text":["Software Engineer with M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software development capabilities.","Offers seven years experience crafting programs, collaborating with peers, and mentoring students in startup and academic settings.","Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.","Dealt with clients and built solutions for small businesses in prior career."]},{"name":"Academic Experience","grad":{"school":"Indiana University South Bend","gpa":3.7,"degree":"Master of Science","year":"2021","major":"Computer Science","text":["Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run a puck-like robot with programmed with enough AI to navigate a maze."]},"undergrad":{"degree":"Bachelor of Arts","school":"Indiana University Bloomington","gpa":3.1,"major":{"anth":"Anthropology","econ":"Economics","ling":"Linguistics"}}},{"name":"Work Experience","aunl":{"name":"Aunalytics","role":"Software Engineer","start":2021,"end":"present","text":["",""]},"sbcs":{"name":"South Bend Code school","role":"Lead Instructor","start":2018,"end":2020,"text":["Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.","Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.","Attended to the struggling to help them understand that coding is about embracing failure and not giving up.","Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach."]},"ace":{"name":"Academic Center for Excellence","start":2016,"end":2019,"role":"Learning Facilitator","cs":"Computer Science","text":["Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed.","Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer.","Convinced the department to retain early Friday hours for those getting a head start on the weekend.","Collaborated with professors to help compress the complex world of code into the tangible everyday for entry-level students."]}},{"skills":{"name":"Engineering Skills","eng":["Full-stack Development","Microservices","REST","MongoDB","React","Typescript","Front-end Web Design","Node.js","Docker","Javascript","HTML","CSS","Markdown","MySQL","Hadoop","R","Machine Learning","Neural Networks","AI","SQL","Java","Python","Object-oriented Programming","Procedural Programming","Functional Programming","Unit Testing","UX Design","Git","C/C++"]}}]
+[{
+  "name": "Jason Richmond",
+  "email": "jason@richmond.is",
+  "site": "jason.richmond.is",
+  "phone": "574.855.6954",
+  "text": ["Software Engineer with M.S. in Computer Science familiar with a diverse array of languages, platforms, and domains seeking to further expand software development capabilities.", "Offers seven years experience crafting programs, collaborating with peers, and mentoring students in startup and academic settings.", "Thrives in collaborative work environments where ego takes a backseat to doing great work and solving the problem at hand.", "Dealt with clients and built solutions for small businesses in prior career."]
+}, {
+  "name": "Academic Experience",
+  "grad": {
+    "school": "Indiana University South Bend",
+    "gpa": 3.7,
+    "degree": "Master of Science",
+    "year": "2021",
+    "major": "Computer Science",
+    "text": ["Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run a puck-like robot with programmed with enough AI to navigate a maze."]
+  },
+  "undergrad": {
+    "degree": "Bachelor of Arts",
+    "school": "Indiana University Bloomington",
+    "gpa": 3.1,
+    "major": {
+      "anth": "Anthropology",
+      "econ": "Economics",
+      "ling": "Linguistics"
+    }
+  }
+}, {
+  "name": "Work Experience",
+  "aunl": {
+    "name": "Aunalytics",
+    "role": "Software Engineer",
+    "start": 2021,
+    "end": "present",
+    "text": ["", ""]
+  },
+  "sbcs": {
+    "name": "South Bend Code school",
+    "role": "Lead Instructor",
+    "start": 2018,
+    "end": 2020,
+    "text": ["Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.", "Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.", "Attended to the struggling to help them understand that coding is about embracing failure and not giving up.", "Entrusted with running the Elkhart branch and being liazon to local schools keeping the relevant stakeholders happy and extending Code School reach."]
+  },
+  "ace": {
+    "name": "Academic Center for Excellence",
+    "start": 2016,
+    "end": 2019,
+    "role": "Learning Facilitator",
+    "cs": "Computer Science",
+    "text": ["Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed.", "Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer.", "Convinced the department to retain early Friday hours for those getting a head start on the weekend.", "Collaborated with professors to help compress the complex world of code into the tangible everyday for entry-level students."]
+  }
+}, {
+  "skills": {
+    "name": "Software Engineering Skills",
+    "dev": ["Full-stack Development", "Microservices", "REST", "MongoDB", "React", "Typescript", "Front-end Web Design", "Node.js", "Docker", "Javascript", "HTML", "CSS", "Markdown", "MySQL", "Hadoop", "R", "Machine Learning", "Neural Networks", "AI", "SQL", "Java", "Python", "Object-oriented Programming", "Procedural Programming", "Functional Programming", "Unit Testing", "UX Design", "Git", "C/C++"]
+  }
+}]
