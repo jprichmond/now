@@ -46,7 +46,7 @@ def wrap(n,l,t,c,v): # newline, indent level, html tag, html class, value
 def iter(a,l): # array of text strings, indent level
   s = ''
   for i in range(len(a)):
-    s += wrap(i,l,'ul','',a[i])
+    s += wrap(i,l,'li','',a[i])
   return s
 
 unscrambleJS = '''\
