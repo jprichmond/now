@@ -115,9 +115,9 @@ body = wrap(F,0,'body','content',
     )
   )+
   wrap(T,1,'section','skills',
-    wrap(F,2,'h2','title',f'{dev} Skills')+
+    wrap(F,2,'h2','title',f'{craft.name}')+
     wrap(T,2,'ul','',
-      wrap(F,3,'li','',unpack(craft.skills.dev))
+      wrap(F,3,'li','',unpack(craft.dev))
     )
   )+
   wrap(T,1,'section','education',
