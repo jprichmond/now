@@ -115,7 +115,7 @@ body = wrap(F,0,'body','content',
       wrap(F,0,'span','right',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
     )+
     wrap(F,2,'ul','ace',
-      iter(work.sbcs.text,3)
+      iter(work.ace.text,3)
     )
   )+
   wrap(T,1,'section','skills',
