@@ -49,14 +49,15 @@ const work = {
     end:2023,
     text: [
       `Maintained the composite of microservices and REST API comprising our data solutions platform written in Node.js using MongoDB, GraphQL, Hadoop, and Apache Pig, to name a few.`,
-      `Became subject matter expert in our data portability framework.`,
+      `Became subject matter expert in Formations, our in-house data portability framework.`,
       `Contributed to initiatives to improve the robustness and fault-tolerance of our data pipeline.`,
       `Committed features that sped up our data delivery by an order of magnitude helping us achieve our on-time delivery goal over a quarter after seldom doing so over a week.`,
       `Took the reins on implementing two-phase procedure of data manipulation so that only valid data would be written to the destination.`,
       `Investigated and coded a dynamic solution to a logging failure impacting our ability to audit our deliverables.`,
       `Raised the alarm to terminate a maintenance initiative that introduced widespread and subtle bugs in our soon-to-be legacy backend.`,
       `Pushed for and piloted new team structure to better communicate and increase collaboration.`,
-      `Engaged in weekly learning discussions and the designing of our next generation platform written in Typescript using React.`
+      `Fixed features in the backend-of-the-frontend of our Vue.js webapp using Storybook.js`,
+      `Engaged in designing our next generation platform written in Typescript using React.js.`
     ]
   },
   sbcs: {
@@ -122,19 +123,24 @@ const craft = {
         `Agile`,
         `Scrum`,
         `Kanban`,
+        `Gang of Four Design Patterns`,
+        `SOLID`,
       ]
     },
     tool: {
       title: `Tools`,
       names: [
         `Node.js`,
-        `React`,
+        `React.js`,
+        `Vue.js`,
+        `Storybook.js`,
         `p5.js`,
         `GraphQL`,
         `MongoDB`,
         `PostgreSQL`,
         `Git`,
         `Docker`,
+        `Mocha`,
         `Hadoop`,
         `Apache Pig`,
         `Exasol`,
