@@ -9,7 +9,7 @@ const info = {
   email:`jason@richmond.is`,
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
-  text: [`Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build something great.`,`Offers seven years experience crafting programs collaborating with peers, and mentoring students in startup and academic settings.`,`Thrives in collaborative work environments where ego takes a backseat to solving hard problems and doing great work.`,`Experienced in remote/hybrid work environments and committed to building and maintaining a solid, productive team.`,`Approaches challenges and setbacks with a growth mindset.`]
+  text: [`Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build something great.`,`Offers seven years experience crafting applications, programming with peers, and mentoring students in startup and academic settings.`,`Thrives in collaborative work environments where ego takes a backseat to solving hard problems and doing great work.`,`Experienced in remote/hybrid work environments and committed to building and maintaining a solid, productive team.`,`Approaches challenges and setbacks with a growth mindset.`]
 }
 const ed = {
   name: `Academic Experience`,
