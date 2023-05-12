@@ -2,7 +2,7 @@ import json
 from collections import namedtuple
 from datetime import date as d
 
-resume = open('../data.json')
+resume = open('data.json')
 data = json.load(resume,
                  object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 info = data[0]; ed = data[1]; work = data[2]; craft = data[3]
@@ -120,7 +120,11 @@ body = wrap(F,0,'body','content',
   wrap(T,1,'section','skills',
     wrap(F,2,'h2','title',f'{craft.name}')+
     wrap(T,2,'ul','',
-      wrap(F,3,'li','',unpack(craft.dev))
+      wrap(F,3,'li','',unpack(craft.dev.prog.names))+
+      wrap(T,3,'li','',unpack(craft.dev.lang.names))+
+      wrap(T,3,'li','',unpack(craft.dev.tool.names))+
+      wrap(T,3,'li','',unpack(craft.dev.meth.names))+
+      wrap(T,3,'li','',unpack(craft.dev.doms.names))
     )
   )+
   wrap(T,1,'section','education',
@@ -129,11 +133,11 @@ body = wrap(F,0,'body','content',
     wrap(T,2,'h4','place',ed.grad.school.upper()+
       wrap(F,0,'span','right',ed.grad.year)
     )+
-    wrap(T,2,'ul','sbcs',
+    wrap(T,2,'ul','grad',
       wrap(F,3,'li','',ed.grad.text[0])
     )
   )
 )
 
-output = open('../../seeking.html', 'w')
+output = open('../seeking.html', 'w')
 output.write(head + body)

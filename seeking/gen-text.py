@@ -1,6 +1,6 @@
 import json; from collections import namedtuple; from datetime import date as d
 ###############################################################################################################
-resume = open('../data.json'); date = d.today().strftime('%Y.%m.%d'); nl = '\n'; text = ''
+resume = open('data.json'); date = d.today().strftime('%Y.%m.%d'); nl = '\n'; text = ''
 dat = json.load(resume,object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 info = dat[0]; ed = dat[1]; work = dat[2]; craft = dat[3]; skl = craft.name; dev = craft.dev
 cl = 31; gut = 5; cr = 75; t = 2; full = cl + gut + cr
@@ -26,8 +26,7 @@ def bullet(s,mx,dent):
     s = ' '*dent+' '+s[i:]
   a.append(s)
   return a
-
-
+# GENERATE BULLETS ############################################################################################
 def bullets(arr,mx,dent):
   a = []
   for s in arr:
@@ -38,12 +37,16 @@ info_fields = f'EMAIL: {info.email} ~ TEXT: {info.phone} ~ SITE: {info.site} ~ D
 full_column = [nl,display(_1),display(_2),display(_3),display(_4),display(_5),nl,
 f'''{(full-len(info_fields)-7)*' '}{info_fields}\n\n*{(full-2)*'~'}*''']
 # ITERATE OVER SKILLS #########################################################################################
-def skills(arr,a=[]):
-  for i in range(len(arr)):
-    a.append(f'''{t*' '}{arr[i]+(cl-len(arr[i])-t)*' '}{gut*' '}''')
+def skills(obj):
+  a = []
+  a.append(f'''{obj.title.upper()+':'+(cl-len(obj.title)+1-t)*' '}{gut*' '}''') 
+  for n in obj.names:
+    a.append(f'''{t*' '}{n+(cl-len(n)-t)*' '}{gut*' '}''')
+  a.append(cl*' '+gut*' ')
   return a
 # DEV SKILLS ##################################################################################################
-left_column = [f'''{skl.upper()}{(cl-len(skl))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}'''] + skills(dev)
+left_column = [f'''{skl.upper()}{(cl-len(skl))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''']
+left_column += skills(dev.prog)+skills(dev.lang)+skills(dev.meth)+skills(dev.tool)+skills(dev.doms)
 # GENERATE WORK TEXT ##########################################################################################
 def jobs(emp):
   a = [f'''*{(cr-2)*'~'}*''']
@@ -59,12 +62,8 @@ aex = ed.name; grad = ed.grad; deg = f'{grad.degree.upper()} ~ {grad.major.title
 right_column += ['',f'''{(cr-len(f'{aex}'))*' '}{aex.upper()}''',f'''*{(cr-2)*'~'}*''']
 # GRAD ########################################################################################################
 right_column += [f'''{deg}{(cr-len(deg)-len(grad.year))*' '}{grad.year}''', 
-f'''  {grad.school.title()}{(cr-len(grad.school)-len(g)-len(str(grad.gpa))-2)*' '}{g.upper()}{grad.gpa}''',
-f'''  * {grad.text[0][:71]}''',f'''    {grad.text[0][72:137]}''',f'''    {grad.text[0][138:208]}''',
-f'''    {grad.text[0][209:]}''','',f'''*{(cr-2)*'~'}*''']
-# UNDERGRAD ###################################################################################################
-un = ed.undergrad; maj = f'''{un.major.anth.title()}, {un.major.ling.title()}, {un.major.econ.title()}'''
-right_column += [f'''{un.degree.upper()} ~ {maj}''',f'''  {un.school.title()}''']
+f'''  {grad.school.title()}{(cr-len(grad.school)-len(g)-len(str(grad.gpa))-2)*' '}{g.upper()}{grad.gpa}''']
+right_column += bullets(grad.text,71,2)
 # PRINT TEXT ##################################################################################################
 for line in full_column:
   text += line + '\n'
@@ -72,9 +71,9 @@ leftright = zip(left_column,right_column)
 for line in leftright:
   text += line[0] + line[1] + '\n'
 # WRITE TO TEXT FILE ##########################################################################################
-output = open('../text-resume/seeking.txt', 'w');output.write(text)
+output = open('seeking.txt', 'w');output.write(text)
 # GENERATE HTML VERSION OF TEXT FILE
-output = open('../../seeking-text.html', 'w');output.write(f'''\
+output = open('../seeking-text.html', 'w');output.write(f'''\
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">

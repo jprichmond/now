@@ -61,51 +61,76 @@ const work = {
 
 const craft = {
   name: `Development Experience`,
-  dev: [
-    `Object-oriented Programming`,
-    `Procedural Programming`,
-    `Functional Programming`,
-    `Javascript`,
-    `Typescript`,
-    `HTML`,
-    `CSS`,
-    `Python`,
-    `Mojo`,
-    `Swift`,
-    `Supercollider`,
-    `Counternote`,
-    `CSound`,
-    `C/C++`,
-    `C#`,
-    `Java`,
-    `SQL`,
-    `R`,
-    `Git`,
-    `GraphQL`,
-    `React`,
-    `MongoDB`,
-    `PostgreSQL`,
-    `Node.js`,
-    `Docker`,
-    `Hadoop`,
-    `Apache Pig`,
-    `Exasol`,
-    `Alluxio`,
-    `p5.js`,
-    `UI/UX Design`,
-    `Full-stack Development`,
-    `Microservices`,
-    `REST`,
-    `Machine Learning`,
-    `Neural Networks`,
-    `AI`,
-    `Unit Testing`,
-    `CI/CD`,
-    `Agile`,
-    `Scrum`,
-    `Kanban`,
-    `Jira`,
-  ]
+  dev: {
+    prog: {
+      title: `Programming Paradigms`,
+      names: [
+        `Object-oriented Programming`,
+        `Procedural Programming`,
+        `Functional Programming`,
+      ]
+    },
+    lang: {
+      title: `Languages`,
+      names: [
+        `Javascript`,
+        `Typescript`,
+        `HTML`,
+        `CSS`,
+        `Python`,
+        `Mojo`,
+        `Swift`,
+        `Supercollider`,
+        `Counternote`,
+        `CSound`,
+        `C/C++`,
+        `C#`,
+        `Java`,
+        `SQL`,
+        `R`,
+      ]
+    },
+    meth: {
+      title: `Methodologies`,
+      names: [
+        `CI/CD`,
+        `TDD`,
+        `Agile`,
+        `Scrum`,
+        `Kanban`,
+      ]
+    },
+    tool: {
+      title: `Tools`,
+      names: [
+        `Node.js`,
+        `React`,
+        `p5.js`,
+        `GraphQL`,
+        `MongoDB`,
+        `PostgreSQL`,
+        `Git`,
+        `Docker`,
+        `Hadoop`,
+        `Apache Pig`,
+        `Exasol`,
+        `Alluxio`,
+        `Jira`,
+      ]
+    },
+    doms: {
+      title: `Domains`,
+      names: [
+        `UI/UX Design`,
+        `Full-stack Development`,
+        `Microservices`,
+        `REST`,
+        `Machine Learning`,
+        `Neural Networks`,
+        `AI`,
+      ]
+    },
+  }
 }
 
 
