@@ -28,7 +28,7 @@ PROGRAMMING PARADIGMS:              SOFTWARE ENGINEER                           
   Procedural Programming              * Maintained the composite of microservices and REST API comprising
   Functional Programming                our data solutions platform written in Node.js using MongoDB,
                                         GraphQL, Hadoop, and Apache Pig, to name a few.
-LANGUAGES:                            * Became subject matter expert in our data portability framework
+LANGUAGES:                            * Became subject matter expert in our data portability framework.
   Javascript                          * Contributed to initiatives to improve the robustness and
   Typescript                            fault-tolerance of our data pipeline.
   HTML                                * Committed features that sped up our data delivery by an order of

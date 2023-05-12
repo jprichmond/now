@@ -49,7 +49,7 @@ const work = {
     end:2023,
     text: [
       `Maintained the composite of microservices and REST API comprising our data solutions platform written in Node.js using MongoDB, GraphQL, Hadoop, and Apache Pig, to name a few.`,
-      `Became subject matter expert in our data portability framework`,
+      `Became subject matter expert in our data portability framework.`,
       `Contributed to initiatives to improve the robustness and fault-tolerance of our data pipeline.`,
       `Committed features that sped up our data delivery by an order of magnitude helping us achieve our on-time delivery goal over a quarter after seldom doing so over a week.`,
       `Took the reins on implementing two-phase procedure of data manipulation so that only valid data would be written to target.`,
