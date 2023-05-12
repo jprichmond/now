@@ -52,7 +52,7 @@ const work = {
       `Became subject matter expert in our data portability framework.`,
       `Contributed to initiatives to improve the robustness and fault-tolerance of our data pipeline.`,
       `Committed features that sped up our data delivery by an order of magnitude helping us achieve our on-time delivery goal over a quarter after seldom doing so over a week.`,
-      `Took the reins on implementing two-phase procedure of data manipulation so that only valid data would be written to target.`,
+      `Took the reins on implementing two-phase procedure of data manipulation so that only valid data would be written to the destination.`,
       `Investigated and coded a dynamic solution to a logging failure impacting our ability to audit our deliverables.`,
       `Raised the alarm to terminate a maintenance initiative that introduced widespread and subtle bugs in our soon-to-be legacy backend.`,
       `Pushed for and piloted new team structure to better communicate and increase collaboration.`,
