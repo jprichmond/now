@@ -9,7 +9,7 @@ const info = {
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
   text: [
-    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build on seven years experience crafting applications, programming with peers, and mentoring others in startup and academic settings.`,
+    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build on seven years experience crafting applications in startup and academic settings.`,
   ]
 }
 const ed = {
