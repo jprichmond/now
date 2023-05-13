@@ -7,18 +7,12 @@
 /////  //   // //////    ////   //    //    //    // //  /////  //   // //      //   ////   //    // //////
 
 
-              EMAIL: jason@richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2023.05.12
+              EMAIL: jason@richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2023.05.13
 
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-        * Software Engineer with a Master’s in Computer Science familiar with a diverse array of
-          languages and platforms seeking opportunity to build something great.
-        * Offers seven years experience crafting applications, programming with peers, and
-          mentoring students in startup and academic settings.
-        * Thrives in collaborative work environments where ego takes a backseat to solving hard
-          problems.
-        * Familiar with remote/hybrid work environments and committed to building and maintaining a
-          solid, productive team.
-        * Approaches challenges and setbacks with a growth mindset.
+      * Software Engineer with a Master’s in Computer Science familiar with a diverse array of
+        languages and platforms seeking opportunity to build on seven years experience crafting
+        applications, programming with peers, and mentoring others in startup and academic settings.
 
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 DEVELOPMENT EXPERIENCE                                                                          WORK EXPERIENCE
@@ -46,7 +40,7 @@ LANGUAGES:                            * Became subject matter expert in Formatio
   R                                   * Pushed for and piloted new team structure to better communicate and
                                         increase collaboration.
 METHODOLOGIES:                        * Fixed features in the backend-of-the-frontend of our Vue.js webapp
-  CI/CD                                 using Storybook.js
+  CI/CD                                 using Storybook.js.
   TDD                                 * Engaged in designing our next generation platform written in
   Agile                                 Typescript using React.js.
   Scrum                             *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*

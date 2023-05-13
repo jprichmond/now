@@ -9,11 +9,7 @@ const info = {
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
   text: [
-    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build something great.`,
-    `Offers seven years experience crafting applications, programming with peers, and mentoring students in startup and academic settings.`,
-    `Thrives in collaborative work environments where ego takes a backseat to solving hard problems.`,
-    `Familiar with remote/hybrid work environments and committed to building and maintaining a solid, productive team.`,
-    `Approaches challenges and setbacks with a growth mindset.`
+    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build on seven years experience crafting applications, programming with peers, and mentoring others in startup and academic settings.`,
   ]
 }
 const ed = {
@@ -56,7 +52,7 @@ const work = {
       `Investigated and coded a dynamic solution to a logging failure impacting our ability to audit our deliverables.`,
       `Raised the alarm to terminate a maintenance initiative that introduced widespread and subtle bugs in our soon-to-be legacy backend.`,
       `Pushed for and piloted new team structure to better communicate and increase collaboration.`,
-      `Fixed features in the backend-of-the-frontend of our Vue.js webapp using Storybook.js`,
+      `Fixed features in the backend-of-the-frontend of our Vue.js webapp using Storybook.js.`,
       `Engaged in designing our next generation platform written in Typescript using React.js.`
     ]
   },

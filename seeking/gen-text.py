@@ -35,7 +35,7 @@ def bullets(arr,mx,dent):
 # CONTACT INFORMATION AND AIM #################################################################################
 info_fields = f'EMAIL: {info.email} ~ TEXT: {info.phone} ~ SITE: {info.site} ~ DATE: {date}'
 full_column = [nl,display(_1),display(_2),display(_3),display(_4),display(_5),nl,
-f'''{(full-len(info_fields)-7)*' '}{info_fields}\n\n*{(full-2)*'~'}*'''] + bullets(info.text,99,8)
+f'''{(full-len(info_fields)-7)*' '}{info_fields}\n\n*{(full-2)*'~'}*'''] + bullets(info.text,103,6)
 full_column += [f'''\n*{(full-2)*'~'}*''']
 # ITERATE OVER SKILLS #########################################################################################
 def skills(obj):
