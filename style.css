@@ -2,7 +2,6 @@ body {
   background-color: rgb(244, 244, 235);
   margin: 0;
   padding: 0;
-  min-width: 320px;
 }
 
 section {
@@ -70,8 +69,9 @@ pre {
   list-style-type: none;
 }
 .content {
+  margin: auto;
   padding: 30px 30px 30px 30px;
-  max-width: 1024px;
+  max-width: 720px;
 }
 .info {
   text-align: right;
