@@ -74,7 +74,7 @@ for line in leftright:
 # WRITE TO TEXT FILE ##########################################################################################
 output = open('seeking.txt', 'w');output.write(text)
 # GENERATE HTML VERSION OF TEXT FILE
-output = open('../seeking-text.html', 'w');output.write(f'''\
+output = open('../seeking-in-ascii.html', 'w');output.write(f'''\
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
