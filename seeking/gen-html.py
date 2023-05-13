@@ -139,5 +139,4 @@ body = wrap(F,0,'body','content',
   )
 )
 
-output = open('../seeking.html', 'w')
-output.write(head + body)
+open('../seeking.html', 'w').write(head + body)

@@ -1,8 +1,7 @@
 # GENERATE HTML VERSION OF TEXT FILE ##########################################################################
 input = open('seeking.txt', 'r')
 text = input.read()
-output = open('../seeking-in-ascii.html', 'w')
-output.write(f'''\
+output = open('../seeking-in-ascii.html', 'w').write(f'''
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">

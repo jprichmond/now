@@ -96,6 +96,7 @@ for line in full_column:
 leftright = zip(left_column,right_column)
 for line in leftright:
   text += line[0] + line[1] + '\n'
-
+text += f'''\n\n{(full//2-len('~ * ~')//2)*' '}~ * ~{(full//2-len('~ * ~')//2)*' '}\n\n\n'''
+                                                    
 # WRITE TO TEXT FILE ##########################################################################################
-output = open('seeking.txt', 'w');output.write(text)
+open('seeking.txt', 'w').write(text)
