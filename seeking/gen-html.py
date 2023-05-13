@@ -109,7 +109,7 @@ body = wrap(F,0,'body','content',
     wrap(T,2,'ul','sbcs',
       iter(work.sbcs.text,3)
     )+
-    wrap(T,2,'h3','role',work.ace.role+' ~ '+work.ace.cs)+
+    wrap(T,2,'h3','role',work.ace.role+' ~ '+work.ace.sub)+
     wrap(T,2,'h4','place',work.ace.name.upper()+
       wrap(F,0,'span','right',f'{work.ace.start}'+' ~ '+f'{work.ace.end}')
     )+
@@ -129,7 +129,7 @@ body = wrap(F,0,'body','content',
   )+
   wrap(T,1,'section','education',
     wrap(F,2,'h2','heading','Academic Experience')+
-    wrap(T,2,'h3','role',ed.grad.degree)+
+    wrap(T,2,'h3','role',ed.grad.degree+' ~ '+ed.grad.major)+
     wrap(T,2,'h4','place',ed.grad.school.upper()+
       wrap(F,0,'span','right',ed.grad.year)
     )+

@@ -56,7 +56,7 @@ TOOLS:                                  object-oriented programming.
   p5.js                                 local schools keeping the relevant stakeholders happy and extending
   GraphQL                               Code School reach.
   MongoDB                           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  PostgreSQL                        LEARNING FACILITATOR                                            2016 ~ 2019
+  PostgreSQL                        LEARNING FACILITATOR ~ Computer Science                         2016 ~ 2019
   Git                                 Academic Center For Excellence
   Docker                              * Equipped dozens of graduates and undergraduates of all levels
   Mocha                                 having trouble grokking the theory and practice of Computer Science

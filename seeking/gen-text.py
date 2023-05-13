@@ -49,15 +49,15 @@ def skills(obj):
 left_column = [f'''{skl.upper()}{(cl-len(skl))*' '}{gut*' '}''',f'''*{(cl-2)*'~'}*{(gut)*' '}''']
 left_column += skills(dev.prog)+skills(dev.lang)+skills(dev.meth)+skills(dev.tool)+skills(dev.doms)
 # GENERATE WORK TEXT ##########################################################################################
-def jobs(emp):
-  a = [f'''*{(cr-2)*'~'}*''']
-  a.append(f'''{emp.role.upper()}{(cr-len(emp.role)-len(yrs := f'{emp.start} ~ {emp.end}'))*' '}{yrs}''')
+def jobs(emp,sub=False):
+  a = [f'''*{(cr-2)*'~'}*''']; subject = f'''{emp.role.upper()}{' ~ '+emp.sub if sub else ''}'''
+  a.append(f'''{subject}{(cr-len(subject)-len(yrs := f'{emp.start} ~ {emp.end}'))*' '}{yrs}''')
   a.extend([f'''  {emp.name.title()}'''] + bullets(emp.text,71,2))
   return a
 # WORK EXPERIENCE #############################################################################################
 wex = work.name; aun = work.aun; yrs = f'{aun.start} ~ {aun.end}'
 right_column = [f'''{(cr-len(f'{wex}'))*' '}{wex.upper()}''']
-right_column += jobs(work.aun) + jobs(work.sbcs) + jobs(work.ace)
+right_column += jobs(work.aun) + jobs(work.sbcs) + jobs(work.ace,True)
 # ACADEMIC EXPERIENCE #########################################################################################
 aex = ed.name; grad = ed.grad; deg = f'{grad.degree.upper()} ~ {grad.major.title()}'; g = 'gpa: '
 right_column += ['',f'''{(cr-len(f'{aex}'))*' '}{aex.upper()}''',f'''*{(cr-2)*'~'}*''']

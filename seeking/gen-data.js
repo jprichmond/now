@@ -72,7 +72,7 @@ const work = {
     start:2016,
     end:2019,
     role:`Learning Facilitator`,
-    cs:`Computer Science`,
+    sub:`Computer Science`,
     text: [
       `Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed.`,
       `Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer.`,
