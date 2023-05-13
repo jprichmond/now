@@ -105,7 +105,7 @@ full = cl + gut + cr
 # DISPLAY NAME IN LARGE ASCII FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def display(l,s=''):
   for i in range(len(l)):
-    ((s := f'''{s}{l[i]*'/'}''') if i%2 else (s := f'''{s}{l[i]*' '}''')) # alternate spaces and numbers
+    (s := f'''{s}{l[i]*'/'}''') if i%2 else (s := f'''{s}{l[i]*' '}''') # alternate spaces and numbers
   return s
 
 # VALUES FOR DISPLAY FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
