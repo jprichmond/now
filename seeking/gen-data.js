@@ -37,7 +37,7 @@ const ed = {
   }
 }
 const work = {
-  name: `Work Experience`,
+  name: `Professional Experience`,
   aun: {
     name:`Aunalytics`,
     role:`Software Engineer`,
@@ -81,7 +81,7 @@ const work = {
 }
 
 const craft = {
-  name: `Development Experience`,
+  name: `Development Skills`,
   dev: {
     prog: {
       title: `Programming Paradigms`,
