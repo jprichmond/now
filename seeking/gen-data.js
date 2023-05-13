@@ -96,8 +96,7 @@ const craft = {
       names: [
         `Javascript`,
         `Typescript`,
-        `HTML`,
-        `CSS`,
+        `HTML/CSS`,
         `Python`,
         `Mojo`,
         `Swift`,
@@ -108,7 +107,7 @@ const craft = {
         `C#`,
         `Java`,
         `SQL`,
-        `R`,
+        `Assembly`,
       ]
     },
     meth: {
@@ -131,6 +130,7 @@ const craft = {
         `Vue.js`,
         `Storybook.js`,
         `p5.js`,
+        `Okta`,
         `GraphQL`,
         `MongoDB`,
         `PostgreSQL`,
