@@ -67,7 +67,7 @@ head = f'''
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 <script>
@@ -96,11 +96,11 @@ body = wrap(F,0,'body','content',
   wrap(T,1,'section','skills',
     wrap(F,2,'h2','title',f'{craft.name}')+
     wrap(T,2,'ul','',
-      wrap(F,3,'li','',f'<span class="bl">{craft.dev.prog.title.upper()}</span>: {unpack(craft.dev.prog.names)}')+
-      wrap(T,3,'li','',f'<span class="bl">{craft.dev.lang.title.upper()}</span>: {unpack(craft.dev.lang.names)}')+
-      wrap(T,3,'li','',f'<span class="bl">{craft.dev.tool.title.upper()}</span>: {unpack(craft.dev.tool.names)}')+
-      wrap(T,3,'li','',f'<span class="bl">{craft.dev.meth.title.upper()}</span>: {unpack(craft.dev.meth.names)}')+
-      wrap(T,3,'li','',f'<span class="bl">{craft.dev.doms.title.upper()}</span>: {unpack(craft.dev.doms.names)}')
+      wrap(F,3,'li','',f'<span class="bullet">{craft.dev.prog.title.upper()}</span>: {unpack(craft.dev.prog.names)}')+
+      wrap(T,3,'li','',f'<span class="bullet">{craft.dev.lang.title.upper()}</span>: {unpack(craft.dev.lang.names)}')+
+      wrap(T,3,'li','',f'<span class="bullet">{craft.dev.tool.title.upper()}</span>: {unpack(craft.dev.tool.names)}')+
+      wrap(T,3,'li','',f'<span class="bullet">{craft.dev.meth.title.upper()}</span>: {unpack(craft.dev.meth.names)}')+
+      wrap(T,3,'li','',f'<span class="bullet">{craft.dev.doms.title.upper()}</span>: {unpack(craft.dev.doms.names)}')
     )
   )+
   wrap(T,1,'section','work',
