@@ -94,6 +94,11 @@ pre {
   display: block;
   float: right;
 }
+.bl {
+  font-size: 10pt;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
 
 /* font-family: 'Oxygen', sans-serif;
 font-family: 'Merriweather Sans', sans-serif;

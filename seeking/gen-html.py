@@ -93,6 +93,16 @@ body = wrap(F,0,'body','content',
       iter(info.text,3)
     )
   )+
+  wrap(T,1,'section','skills',
+    wrap(F,2,'h2','title',f'{craft.name}')+
+    wrap(T,2,'ul','',
+      wrap(F,3,'li','',f'<span class="bl">{craft.dev.prog.title.upper()}</span>: {unpack(craft.dev.prog.names)}')+
+      wrap(T,3,'li','',f'<span class="bl">{craft.dev.lang.title.upper()}</span>: {unpack(craft.dev.lang.names)}')+
+      wrap(T,3,'li','',f'<span class="bl">{craft.dev.tool.title.upper()}</span>: {unpack(craft.dev.tool.names)}')+
+      wrap(T,3,'li','',f'<span class="bl">{craft.dev.meth.title.upper()}</span>: {unpack(craft.dev.meth.names)}')+
+      wrap(T,3,'li','',f'<span class="bl">{craft.dev.doms.title.upper()}</span>: {unpack(craft.dev.doms.names)}')
+    )
+  )+
   wrap(T,1,'section','work',
     wrap(F,2,'h2','heading','Work Experience')+
     wrap(T,2,'h3','role',work.aun.role)+
@@ -115,16 +125,6 @@ body = wrap(F,0,'body','content',
     )+
     wrap(F,2,'ul','ace',
       iter(work.ace.text,3)
-    )
-  )+
-  wrap(T,1,'section','skills',
-    wrap(F,2,'h2','title',f'{craft.name}')+
-    wrap(T,2,'ul','',
-      wrap(F,3,'li','',unpack(craft.dev.prog.names))+
-      wrap(T,3,'li','',unpack(craft.dev.lang.names))+
-      wrap(T,3,'li','',unpack(craft.dev.tool.names))+
-      wrap(T,3,'li','',unpack(craft.dev.meth.names))+
-      wrap(T,3,'li','',unpack(craft.dev.doms.names))
     )
   )+
   wrap(T,1,'section','education',
