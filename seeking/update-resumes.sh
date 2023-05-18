@@ -1,6 +1,7 @@
 #!/bin/bash
 
 node gen-data.js
+node gen-ascii.js
 
 python3 gen-html.py
 
