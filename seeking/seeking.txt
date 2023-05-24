@@ -90,8 +90,8 @@ info, ed, work, craft, cl, gut, cr, t, sp = data[0], data[1], data[2], data[3], 
 text, date, full, dev = '', d.today().strftime('%Y.%m.%d'), cl + gut + cr, craft.dev
 deg, g = f'{ed.grad.degree.upper()} ~ {ed.grad.major.title()}', 'gpa: '
 
-def display_name(n, letters, char, italic=True, s=''): # display name in ascii characters
-  lines = []
+def display_name(n, letters, char, italic=True): # display name in ascii characters
+  s, lines = '', []
   for line in range(len(letters[' '])):
     lines.append('')
   for ch in n.upper():
