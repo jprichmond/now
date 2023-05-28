@@ -76,7 +76,9 @@ head = f'''
 '''
 body = wrap(F,0,'body','content',
   wrap(F,1,'header','info',
-    wrap(F,2,'h1','name',info.name)+
+    wrap(F,2,'h1','name',
+      wrap(F,3,'a href="home.html"','',info.name)
+    )+
     wrap(T,2,'ul','info',
       wrap(F,2,'li','email',
         wrap(F,3,'script','',f'document.write(unscramble({scrambledEmail}))')
