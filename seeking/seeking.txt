@@ -7,7 +7,7 @@
   /////  //   // /////    /////  //   ///      //   // //  /////  //   // //      //  /////  //   /// /////
 
 
-              EMAIL: jason@richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2023.06.07
+              EMAIL: jason@richmond.is ~ TEXT: 574.855.6954 ~ SITE: jason.richmond.is ~ DATE: 2023.07.31
 
 *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
         * Software Engineer with a Master’s in Computer Science familiar with a diverse array of
@@ -28,52 +28,52 @@ LANGUAGES:                            * Became subject matter expert in Formatio
   HTML/CSS                              fault-tolerance of our data pipeline.
   Python                              * Committed features that sped up our data delivery by an order of
   Mojo                                  magnitude helping us achieve our on-time delivery goal over a
-  Swift                                 quarter after seldom doing so over a week.
-  Supercollider                       * Took the reins on implementing two-phase procedure of data
-  Counternote                           manipulation so that only valid data would be written to the
-  CSound                                destination.
-  C/C++                               * Investigated and coded a dynamic solution to a logging failure
-  C#                                    impacting our ability to audit our deliverables.
-  Java                                * Raised the alarm to terminate a maintenance initiative that
-  SQL                                   introduced widespread and subtle bugs in our soon-to-be legacy
-  Assembly                              backend.
-                                      * Pushed for and piloted new team structure to better communicate and
-METHODOLOGIES:                          increase collaboration.
-  CI/CD                               * Fixed features in the backend-of-the-frontend of our Vue.js webapp
-  TDD                                   using Storybook.js.
-  Agile                               * Engaged in designing our next generation platform written in
-  Scrum                                 Typescript using React.js.
-  Kanban                            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Gang of Four Design Patterns      LEAD INSTRUCTOR                                                 2018 ~ 2020
-  SOLID                               South Bend Code School
-                                      * Crafted interactive learning path spanning eleven lessons of around
-TOOLS:                                  25k words in p5.js, giving students an introduction to class-based
-  Node.js                               object-oriented programming.
-  React.js                            * Laid a concrete foundation for primary and secondary school
-  Vue.js                                students to build out abstract programming concepts using Scratch,
-  Storybook.js                          Web Dev, Unity, Javascript, and Python.
-  p5.js                               * Entrusted with running the Elkhart branch and being liaison to
-  Okta                                  local schools keeping the relevant stakeholders happy and extending
-  GraphQL                               Code School reach.
-  MongoDB                           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  PostgreSQL                        LEARNING FACILITATOR ~ Computer Science                         2016 ~ 2019
-  Git                                 Academic Center For Excellence
-  Docker                              * Equipped dozens of graduates and undergraduates of all levels
-  Mocha                                 having trouble grokking the theory and practice of Computer Science
-  Hadoop                                with the knowledge and skills to succeed.
-  Apache Pig                          * Debugged hundreds of student-written programs, usually on a tight
-  Exasol                                deadline before submission without reference to a working answer.
-  Alluxio                             * Collaborated with professors to help compress the complex world of
-  Jira                                  code into the tangible everyday for entry-level students.
-                                    
-DOMAINS:                                                                                    ACADEMIC EXPERIENCE
-  UI/UX Design                      *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  Full-stack Development            MASTER OF SCIENCE ~ Computer Science                                   2021
-  Microservices                       Indiana University South Bend                                    GPA: 3.7
-  REST                                * Studied a wide spectrum in the discipline, from artificial
-  Machine Learning                      intelligence to algorithm analysis, networking to neural networks,
-  Neural Networks                       graphics to games, even writing the opcodes for a simulated CPU to
-  AI                                    run a puck-like robot with enough AI to navigate a maze.
+  Go                                    quarter after seldom doing so over a week.
+  Swift                               * Took the reins on implementing two-phase procedure of data
+  Supercollider                         manipulation so that only valid data would be written to the
+  Counternote                           destination.
+  CSound                              * Investigated and coded a dynamic solution to a logging failure
+  C                                     impacting our ability to audit our deliverables.
+  C++                                 * Raised the alarm to terminate a maintenance initiative that
+  C#                                    introduced widespread and subtle bugs in our soon-to-be legacy
+  Java                                  backend.
+  SQL                                 * Pushed for and piloted new team structure to better communicate and
+  Assembly                              increase collaboration.
+                                      * Fixed features in the backend-of-the-frontend of our Vue.js webapp
+METHODOLOGIES:                          using Storybook.js.
+  CI/CD                               * Engaged in designing our next generation platform written in
+  TDD                                   Typescript using React.js.
+  Agile                             *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  Scrum                             LEAD INSTRUCTOR                                                 2018 ~ 2020
+  Kanban                              South Bend Code School
+  Gang of Four Design Patterns        * Crafted interactive learning path spanning eleven lessons of around
+                                        25k words in p5.js, giving students an introduction to class-based
+TOOLS:                                  object-oriented programming.
+  Node.js                             * Laid a concrete foundation for primary and secondary school
+  React.js                              students to build out abstract programming concepts using Scratch,
+  Vue.js                                Web Dev, Unity, Javascript, and Python.
+  Storybook.js                        * Entrusted with running the Elkhart branch and being liaison to
+  p5.js                                 local schools keeping the relevant stakeholders happy and extending
+  Okta                                  Code School reach.
+  GraphQL                           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  MongoDB                           LEARNING FACILITATOR ~ Computer Science                         2016 ~ 2019
+  PostgreSQL                          Academic Center For Excellence
+  Git                                 * Equipped dozens of graduates and undergraduates of all levels
+  Docker                                having trouble grokking the theory and practice of Computer Science
+  Mocha                                 with the knowledge and skills to succeed.
+  Hadoop                              * Debugged hundreds of student-written programs, usually on a tight
+  Apache Pig                            deadline before submission without reference to a working answer.
+  Exasol                              * Collaborated with professors to help compress the complex world of
+  Alluxio                               code into the tangible everyday for entry-level students.
+  Jira                              
+                                                                                            ACADEMIC EXPERIENCE
+DOMAINS:                            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  UI/UX Design                      MASTER OF SCIENCE ~ Computer Science                                   2021
+  Full-stack Development              Indiana University South Bend                                    GPA: 3.7
+  Microservices                       * Studied a wide spectrum in the discipline, from artificial
+  REST                                  intelligence to algorithm analysis, networking to neural networks,
+  Machine Learning                      graphics to games, even writing the opcodes for a simulated CPU to
+  Neural Networks                       run a puck-like robot with enough AI to navigate a maze.
 
 
                                                      ~ * ~

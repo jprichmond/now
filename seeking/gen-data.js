@@ -99,11 +99,13 @@ const craft = {
         `HTML/CSS`,
         `Python`,
         `Mojo`,
+        `Go`,
         `Swift`,
         `Supercollider`,
         `Counternote`,
         `CSound`,
-        `C/C++`,
+        `C`,
+        `C++`,
         `C#`,
         `Java`,
         `SQL`,
@@ -119,7 +121,6 @@ const craft = {
         `Scrum`,
         `Kanban`,
         `Gang of Four Design Patterns`,
-        `SOLID`,
       ]
     },
     tool: {
