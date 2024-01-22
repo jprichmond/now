@@ -196,4 +196,4 @@ const ascii_letters = {
 out = JSON.stringify(ascii_letters)
 
 const err = new Error('failed to write to file')
-fs.writeFile('ascii.json', out, (err) => err ? console.log(err) :7)
+fs.writeFile('ascii.json', out, (e) => e ? console.log(err) :7)

@@ -9,7 +9,7 @@ const info = {
   site:`jason.richmond.is`,
   phone:`574.855.6954`,
   text: [
-    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build on eight years experience crafting applications in startup and academic settings.`,
+    `Software Engineer with a Master’s in Computer Science familiar with a diverse array of languages and platforms seeking opportunity to build upon eight years experience crafting applications and solving problems in startup and academic settings`,
   ]
 }
 const ed = {
@@ -21,7 +21,7 @@ const ed = {
     year:`2021`,
     major:`Computer Science`,
     text: [
-      `Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run a puck-like robot with enough AI to navigate a maze.`
+      `Studied a wide spectrum in the discipline, from artificial intelligence to algorithm analysis, networking to neural networks, graphics to games, even writing the opcodes for a simulated CPU to run a puck-like robot with enough AI to navigate a maze`
     ]
   },
   undergrad: {
@@ -44,16 +44,14 @@ const work = {
     start:2021,
     end:2023,
     text: [
-      `Maintained the composite of microservices and REST API comprising our data solutions platform written in Node.js using MongoDB, GraphQL, Hadoop, and Apache Pig, to name a few.`,
-      `Became subject matter expert in Formations, our in-house data portability framework.`,
-      `Contributed to initiatives to improve the robustness and fault-tolerance of our data pipeline.`,
-      `Committed features that sped up our data delivery by an order of magnitude helping us achieve our on-time delivery goal over a quarter after seldom doing so over a week.`,
-      `Took the reins on implementing two-phase procedure of data manipulation so that only valid data would be written to the destination.`,
-      `Investigated and coded a dynamic solution to a logging failure impacting our ability to audit our deliverables.`,
-      `Raised the alarm to terminate a maintenance initiative that introduced widespread and subtle bugs in our soon-to-be legacy backend.`,
-      `Pushed for and piloted new team structure to better communicate and increase collaboration.`,
-      `Fixed features in the backend-of-the-frontend of our Vue.js webapp using Storybook.js.`,
-      `Engaged in designing our next generation platform written in Typescript using React.js.`
+      `Maintained the microservices and REST API of our data solutions platform written in Node using MongoDB, GraphQL, Hadoop, and Apache Pig`,
+      `Achieved subject matter expert in Formations, our in-house data portability framework`,
+      `Contributed to initiatives in improve the robustness and fault-tolerance of our data pipeline`,
+      `Committed features that sped up our data delivery by an order of magnitude allowing us to achieve our on-time delivery goal of 75 consecutive days`,
+      `Took the reins on implementing two-phase procedure for data manipulation so that only valid results would be written to the destination`,
+      `Investigated and coded dynamic solution to a logging failure impacting our deliverables`,
+      `Pushed for and piloted new team structure to better communicate and increase collaboration`,
+      `Engaged in designing our next generation platform written in Typescript using React`
     ]
   },
   sbcs: {
@@ -62,9 +60,9 @@ const work = {
     start:2018,
     end:2020,
     text: [
-      `Crafted interactive learning path spanning eleven lessons of around 25k words in p5.js, giving students an introduction to class-based object-oriented programming.`,
-      `Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, Web Dev, Unity, Javascript, and Python.`,
-      `Entrusted with running the Elkhart branch and being liaison to local schools keeping the relevant stakeholders happy and extending Code School reach.`
+      `Crafted interactive learning path spanning eleven lessons of around 25k words in p5, giving students an introduction to procedural, object-oriented, and functional programming paradigms`,
+      `Laid a concrete foundation for primary and secondary school students to build out abstract programming concepts using Scratch, HTML, CSS, JavaScript, C#, and Python`,
+      `Entrusted with running the Elkhart branch and being liaison to local schools keeping relevant stakeholders happy and extending Code School reach`
     ]
   },
   ace: {
@@ -74,23 +72,15 @@ const work = {
     role:`Learning Facilitator`,
     sub:`Computer Science`,
     text: [
-      `Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed.`,
-      `Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer.`,
-      `Collaborated with professors to help compress the complex world of code into the tangible everyday for entry-level students.`]
+      `Equipped dozens of graduates and undergraduates of all levels having trouble grokking the theory and practice of Computer Science with the knowledge and skills to succeed`,
+      `Debugged hundreds of student-written programs, usually on a tight deadline before submission without reference to a working answer`,
+      `Collaborated with professors to help compress the complex world of code into the tangible everyday for entry-level students`]
   }
 }
 
 const craft = {
   name: `Development Skills`,
   dev: {
-    prog: {
-      title: `Programming Paradigms`,
-      names: [
-        `Object-oriented Programming`,
-        `Procedural Programming`,
-        `Functional Programming`,
-      ]
-    },
     lang: {
       title: `Languages`,
       names: [
@@ -102,7 +92,6 @@ const craft = {
         `Go`,
         `Swift`,
         `Supercollider`,
-        `Counternote`,
         `CSound`,
         `C`,
         `C++`,
@@ -126,11 +115,11 @@ const craft = {
     tool: {
       title: `Tools`,
       names: [
-        `Node.js`,
-        `React.js`,
-        `Vue.js`,
-        `Storybook.js`,
-        `p5.js`,
+        `Node`,
+        `React`,
+        `Vue`,
+        `Storybook`,
+        `p5`,
         `Okta`,
         `GraphQL`,
         `MongoDB`,
@@ -165,4 +154,4 @@ out = [info,ed,work,craft]
 out = JSON.stringify(out)
 
 const err = new Error('failed to write to file')
-fs.writeFile('data.json', out, (err) => err ? console.log(err) :7)
+fs.writeFile('data.json', out, (e) => e ? console.log(err) :7)

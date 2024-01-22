@@ -98,7 +98,6 @@ body = wrap(F,0,'body','content',
   wrap(T,1,'section','skills',
     wrap(F,2,'h2','title',f'{craft.name}')+
     wrap(T,2,'ul','',
-      wrap(F,3,'li','',f'<span class="bullet">{craft.dev.prog.title.upper()}</span>: {unpack(craft.dev.prog.names)}')+
       wrap(T,3,'li','',f'<span class="bullet">{craft.dev.lang.title.upper()}</span>: {unpack(craft.dev.lang.names)}')+
       wrap(T,3,'li','',f'<span class="bullet">{craft.dev.tool.title.upper()}</span>: {unpack(craft.dev.tool.names)}')+
       wrap(T,3,'li','',f'<span class="bullet">{craft.dev.meth.title.upper()}</span>: {unpack(craft.dev.meth.names)}')+
